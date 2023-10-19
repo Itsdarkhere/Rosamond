@@ -15,7 +15,7 @@ export default function Portfolio() {
                         Respecting the intimacy of our clients' personal spaces, we've chosen to keep our portfolio exclusive. To view our craftsmanship, 
                         &nbsp;<Link href={'/request'} className=" underline">please request privileged access.</Link>
                     </h6>
-                    <div className=' h-14 flex flex-row px-9 w-96 bg-black border-2 border-white rounded-3xl gap-2'>
+                    <div className=' h-14 flex flex-row px-9 bg-black border-2 border-white rounded-3xl gap-2'>
                         <input type="text" className=" placeholder:text-white placeholder:text-xl text-white flex-1 focus:ring-0 focus:outline-none focus:border-none bg-transparent" placeholder="Enter password" />
                         <Image src={arrowright} alt='Search' height={12} />
                     </div>
