@@ -76,7 +76,10 @@ export default function AboutUs() {
                             </ul>
                         </div>
                     </div>
-                    <button className=" py-4 px-8 rounded-2xl text-black bg-white font-sans">EXPLORE OUR PORTFOLIO</button>
+                    <button className=" py-4 px-8 rounded-full text-black font-semibold bg-white font-sans flex flex-row justify-center items-center gap-3">
+                        EXPLORE OUR PORTFOLIO
+                        <Image src={blackarrowright} alt="arrow right" height={16} />
+                    </button>
                 </div>
             </section>
             <DreamFormSection />
