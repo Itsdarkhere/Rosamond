@@ -2,8 +2,8 @@ import Link from "next/link"
 
 export default function Nav() {
   return (
-    <header className=" z-30 fixed left-0 top-0 right-0 w-full flex justify-center items-center bg-transparent">
-        <div className=" max-w-[1920px] flex w-full flex-row justify-between items-center py-11 px-4 sm:px-8 md:px-16">
+    <header className=" z-30 fixed px-4 sm:px-8 md:px-16 left-0 top-0 right-0 w-full flex justify-center items-center bg-transparent">
+        <div className=" max-w-[1920px] flex w-full flex-row justify-between items-center py-11">
             <div>
                 <h1>ROSAMOND CONSTRUCTION</h1>
             </div>

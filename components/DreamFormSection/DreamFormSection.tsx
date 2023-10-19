@@ -1,8 +1,8 @@
 
 export default function DreamFormSection() {
   return (
-    <section className='w-full flex flex-row'>
-        <div className=" max-w-[1920px] w-full px-4 sm:px-8 md:px-16 flex flex-row gap-10">
+    <section className='w-full px-4 sm:px-8 md:px-16 flex flex-row justify-center items-center'>
+        <div className=" max-w-[1920px] w-full flex flex-row gap-10">
             <div className=' w-1/3 flex flex-col gap-10'>
             <h4 className=' text-white text-2xl'>Pull Up a Chair & Share Your Dream With Us</h4>
             <p className=' text-white text-lg'>At Rosamond Construction, we craft homes, cabinetry, and timeless spaces, but our true masterpiece is the enduring bond we forge with you. Share your vision, and together, let's shape dreams into reality.</p>

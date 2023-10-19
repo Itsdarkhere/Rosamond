@@ -9,7 +9,7 @@ export default function AboutUs() {
     return (
         <div style={{ backgroundColor: '#161616'}} className="flex relative flex-col items-center justify-between">
             <section className=" w-full pt-52 px-4 sm:px-8 md:px-16 flex flex-col justify-center items-center">
-                <div className=" w-full py-96 rounded-3xl bg-gray-400 relative">
+                <div className=" max-w-[1920px] w-full py-96 rounded-3xl bg-gray-400 relative">
                     <Image className="z-0 object-cover" fill src={contactus} alt="Family picture" />
                 </div>
                 <h2 className=" z-10 relative text-7xl -mt-10 text-white">We Build Legacies</h2>

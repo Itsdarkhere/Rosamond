@@ -6,17 +6,17 @@ import WhySection from "@/components/WhySection/WhySection"
 export default function AboutUs() {
     return (
         <div style={{ backgroundColor: '#161616'}} className="flex relative flex-col items-center justify-between">
-            <section className="w-full h-full relative">
+            <section className="w-full px-4 sm:px-8 md:px-16 h-full relative flex justify-center items-center">
                 <Image priority fill className=' z-0 brightness-50 object-cover' src={hero} alt='Beautiful house' />
-                <div className=' max-w-[1920px] relative z-20 flex flex-col justify-center items-center text-center py-96 px-4 sm:px-8 md:px-16 text-white'>
+                <div className=' max-w-[1920px] relative z-20 flex flex-col justify-center items-center text-center py-96 text-white'>
                     <h1 className=' text-7xl'>Where Arkansas Dreams Meet Superior Craft</h1>
                     <h3 className=' mt-10 max-w-[966px] text-3xl'>Your dream, our craftsmanship.</h3>
                     <button className=' mt-10 text-2xl text-black py-3 px-4 rounded-full bg-white'>SHARE YOUR VISION</button>
                 </div>
             </section>  
             <WhySection />
-            <section  className="w-full pb-28 flex flex-col justify-center items-center">
-                <div className=" max-w-[1920px] w-full px-4 sm:px-8 md:px-16 flex flex-col justify-center items-center gap-10">
+            <section  className="w-full pb-28 px-4 sm:px-8 md:px-16 flex flex-col justify-center items-center">
+                <div className=" max-w-[1920px] w-full flex flex-col justify-center items-center gap-10">
                     <h2 className=" text-white text-3xl">Services We Offer</h2>
                     <div className="w-full py-96 overflow-hidden rounded-3xl relative">
                         <Image fill src={hero} alt="hero picture" />

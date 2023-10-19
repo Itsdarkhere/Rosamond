@@ -7,7 +7,7 @@ import Link from "next/link"
 export default function Contact() {
     return (
         <div style={{ backgroundColor: '#161616'}} className="flex relative flex-col items-center justify-between">
-            <section className="w-full h-full px-4 sm:px-8 md:px-16 pb-24">
+            <section className="w-full h-full px-4 sm:px-8 md:px-16 pb-24 flex justify-center items-center">
                 <div className=" max-w-[1920px] mt-32 overflow-hidden w-full h-full rounded-3xl bg-white flex flex-row">
                     <form className=" flex flex-col w-1/2 py-20 px-28">
                         <h5 className=" text-5xl text-black">Get in Touch</h5>

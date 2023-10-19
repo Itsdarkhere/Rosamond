@@ -25,8 +25,8 @@ export default function Home() {
             <p className=' text-white text-xl mt-9'>From the heart of Springdale, Arkansas, Rosamond Construction upholds the essence of Southern craftsmanship and values. We're more than just builders; we're neighbors dedicated to integrity and community. We offer more than upscale, quality construction; we provide homes where families can grow, and memories are forged. From our family to yours, we promise affordability without compromising on luxury. At Rosamond Construction, your dream home isn't just a project—it's a commitment, a legacy. Let's craft homes filled with heart and soul, together.</p>
           </div>
        </section>
-       <section className=' flex flex-col w-full justify-center items-center'>
-        <div className=" max-w-[1920px] w-full px-4 sm:px-8 md:px-16 flex-col justify-center items-center gap-4">
+       <section className=' flex px-4 sm:px-8 md:px-16  flex-col w-full justify-center items-center'>
+        <div className=" max-w-[1920px] w-full flex-col justify-center items-center gap-4">
           <h3>Where Arkansas Dreams Meet Superior Craft</h3>
           <div className='w-full flex flex-row justify-between'>
             <Link className=' rounded-3xl bg-blue-200 px-16 py-36 flex flex-col' href={'/services'}>

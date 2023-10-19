@@ -1,8 +1,8 @@
 
 export default function StepsSection() {
   return (
-        <section className=' flex gap-10 py-28 flex-col justify-center items-center w-full'>
-            <div className=" max-w-[1920px] w-full px-4 sm:px-8 md:px-16 flex flex-col justify-center items-center gap-10">
+        <section className=' flex gap-10 py-28 px-4 sm:px-8 md:px-16 flex-col justify-center items-center w-full'>
+            <div className=" max-w-[1920px] w-full flex flex-col justify-center items-center gap-10">
                 <h2 className=' text-4xl text-white'>How We Bring Your Vision To Life</h2>
                 <div className=' flex flex-row gap-6'>
                     <div className='flex flex-col text-center items-center'>
