@@ -7,8 +7,8 @@ import Link from "next/link"
 export default function Contact() {
     return (
         <div style={{ backgroundColor: '#161616'}} className="flex relative flex-col items-center justify-between">
-            <section className="w-full h-full px-24 pb-24">
-                <div className=" mt-32 overflow-hidden w-full h-full rounded-3xl bg-white flex flex-row">
+            <section className="w-full h-full px-4 sm:px-8 md:px-16 pb-24">
+                <div className=" max-w-[1920px] mt-32 overflow-hidden w-full h-full rounded-3xl bg-white flex flex-row">
                     <form className=" flex flex-col w-1/2 py-20 px-28">
                         <h5 className=" text-5xl text-black">Get in Touch</h5>
                         <p className=" text-sm text-black">Whether you're an existing customer with inquiries or someone new with a dream project in mind, we're here to listen, assist, and guide. Get in touch with Rosamond Construction today.</p>
