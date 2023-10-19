@@ -4,12 +4,12 @@ import React from 'react';
 
 export default function GoogleMap() {
    const center = {
-        lat: 0,
-        lng: 0
+        lat: 38.889805,
+        lng: -77.009056
    };
 
    return (
-    <div className=' relative h-5/6 rounded-3xl overflow-hidden -ml-12 z-10 w-5/6 flex justify-center items-center'>
+    <div className=' relative h-5/6 rounded-3xl overflow-hidden -ml-12 z-10 w-4/6 flex justify-center items-center'>
         <GoogleMapReact
         bootstrapURLKeys={{ key: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY! }}
         defaultCenter={center}
