@@ -1,8 +1,10 @@
 import Image from "next/image"
 import hero from '../../public/hero.jpg'
+import contact from '../../public/contact.png'
 import TestimonialSection from "@/components/TestimonialSection/TestimonialSection"
 import DreamFormSection from "@/components/DreamFormSection/DreamFormSection"
 import Link from "next/link"
+import GoogleMap from "@/components/GoogleMap"
 
 export default function Contact() {
     return (
@@ -75,8 +77,9 @@ export default function Contact() {
                             </div>
                         </div>
                     </form>
-                    <div className="relative flex-1 w-1/2">
-                        <Image src={hero} alt="hero" fill />
+                    <div className="relative flex-1 w-1/2 flex justify-start items-center">
+                        <GoogleMap />
+                        <Image className=" object-cover" src={contact} alt="hero" fill />
                     </div>
                 </div>
             </section>  
