@@ -3,6 +3,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import quot from '../../public/quot.svg'
+import star from '../../public/star.svg'
+import Image from 'next/image';
 
 export default function TestimonialsSwiper() {
   return (
@@ -14,28 +17,55 @@ export default function TestimonialsSwiper() {
         className=' h-80 w-full py-40 px-52'
         spaceBetween={25}
         slidesPerGroup={2}
-        slidesPerView={2}
+        slidesPerView={2.2}
         speed={500}
         pagination={false}
         >
         <SwiperSlide className='w-full h-full'>
-            <div className='w-full h-full bg-gray-400'></div>
+            <Testimonial 
+            text='Rosamond Construction transformed our vision into reality. Their meticulous attention to detail and Southern craftsmanship gave our home an elegance we never thought possible. Every day feels like luxury living.' 
+            from='The Harrison Family' location='Fayetteville, AR' starCount={5}  />
         </SwiperSlide>
         <SwiperSlide className='w-full h-full'>
-            <div className='w-full h-full bg-gray-500'></div>
+            <Testimonial text='Building a custom home can be overwhelming, but with Rosamond Construction, it felt effortless. Their expertise and genuine care made our home-building journey unforgettable.' 
+            from='Carlos & Maria Gutierrez' location='Hot Springs, AR' starCount={5}  />
         </SwiperSlide>
         <SwiperSlide className='w-full h-full'>
-            <div className='w-full h-full bg-gray-600'></div>
+            <Testimonial 
+            text='Rosamond Construction transformed our vision into reality. Their meticulous attention to detail and Southern craftsmanship gave our home an elegance we never thought possible. Every day feels like luxury living.' 
+            from='The Harrison Family' location='Fayetteville, AR' starCount={5}  />
         </SwiperSlide>
         <SwiperSlide className='w-full h-full'>
-            <div className='w-full h-full bg-gray-600'></div>
+            <Testimonial text='Building a custom home can be overwhelming, but with Rosamond Construction, it felt effortless. Their expertise and genuine care made our home-building journey unforgettable.' 
+            from='Carlos & Maria Gutierrez' location='Hot Springs, AR' starCount={5}  />
         </SwiperSlide>
         <SwiperSlide className='w-full h-full'>
-            <div className='w-full h-full bg-gray-600'></div>
+            <Testimonial 
+            text='Rosamond Construction transformed our vision into reality. Their meticulous attention to detail and Southern craftsmanship gave our home an elegance we never thought possible. Every day feels like luxury living.' 
+            from='The Harrison Family' location='Fayetteville, AR' starCount={5}  />
         </SwiperSlide>
         <SwiperSlide className='w-full h-full'>
-            <div className='w-full h-full bg-gray-600'></div>
+            <Testimonial text='Building a custom home can be overwhelming, but with Rosamond Construction, it felt effortless. Their expertise and genuine care made our home-building journey unforgettable.' 
+            from='Carlos & Maria Gutierrez' location='Hot Springs, AR' starCount={5}  />
         </SwiperSlide>
     </Swiper>
   )
+}
+
+function Testimonial({text, from, location, starCount}: {text: string, from: string, location: string, starCount: number}) {
+    return (
+        <div className='w-full relative h-full bg-white rounded-2xl p-5 flex flex-col justify-center items-center text-center'>
+            <p className=' font-sans text-base pb-3' style={{ color: '#5F5C60'}}>{text}</p>
+            <div className='flex flex-row justify-center items-center gap-2'>
+                <Image height={24} src={star} alt='star' />
+                <Image height={24} src={star} alt='star' />
+                <Image height={24} src={star} alt='star' />
+                <Image height={24} src={star} alt='star' />
+                <Image height={24} src={star} alt='star' />
+            </div>
+            <Image className='absolute bottom-10 right-10' height={32} src={quot} alt='quotation mark' />
+            <p className=' font-sans font-bold text-base pt-2' style={{ color: '#263238' }}>{from}</p>
+            <p className=' font-sans font-medium text-base pt-1.5' style={{ color: '#263238' }}>{location}</p>
+        </div>
+    )
 }
