@@ -2,12 +2,12 @@
 export default function DreamFormSection() {
   return (
     <section style={{ background: 'linear-gradient(120deg, #686810, #4C5A1C, #314B26, #173D2E)' }} className='w-full px-4 sm:px-8 md:px-16 pb-16 pt-16 flex flex-row justify-center items-center'>
-        <div className=" max-w-[1920px] w-full flex flex-row justify-center gap-10">
-            <div className=' w-1/3 flex flex-col gap-10'>
-                <h4 className=' text-white text-6xl font-serif'>Pull Up a Chair & Share Your Dream With Us</h4>
-                <p className=' text-white text-4xl font-sans'>At Rosamond Construction, we craft homes, cabinetry, and timeless spaces, but our true masterpiece is the enduring bond we forge with you. Share your vision, and together, let's shape dreams into reality.</p>
+        <div className=" max-w-[1920px] w-full flex flex-col md:flex-row justify-center gap-10">
+            <div className=' w-full md:w-1/3 flex flex-col gap-10'>
+                <h4 className=' text-white text-6xl font-serif text-center md:text-start'>Pull Up a Chair & Share Your Dream With Us</h4>
+                <p className=' text-white text-4xl font-sans text-center md:text-start'>At Rosamond Construction, we craft homes, cabinetry, and timeless spaces, but our true masterpiece is the enduring bond we forge with you. Share your vision, and together, let's shape dreams into reality.</p>
             </div>
-            <form className=' w-2/3 max-w-[800px] bg-white font-sans shadow-sm rounded-lg flex flex-col justify-start items-start p-2 pb-10'>
+            <form className='w-full  md:w-2/3 max-w-[800px] bg-white font-sans shadow-sm rounded-lg flex flex-col justify-start items-start p-2 pb-10'>
                 <h5 className=' text-3xl text-black font-semibold py-5 px-6 border-b w-full'>Begin Your Rosamond Journey</h5>
                 <div className="col-span-full w-full px-6 mt-4">
                     <label

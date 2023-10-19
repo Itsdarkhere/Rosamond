@@ -14,13 +14,18 @@ export default function TestimonialsSwiper() {
         direction={'horizontal'}
         loop={false}
         navigation={false}
-        className=' aspect-[8/2] w-full px-52'
-        spaceBetween={50}
+        className=' w-full px-52'
+        spaceBetween={25}
         slidesPerGroup={1}
         slidesPerView={1.2}
         speed={500}
         pagination={false}
         breakpoints={{
+            600: {
+                slidesPerView: 1.2,
+                slidesPerGroup: 1,
+                spaceBetween: 50
+            },
             1000: {
                 slidesPerView: 2.2,
                 slidesPerGroup: 2,
@@ -61,7 +66,7 @@ export default function TestimonialsSwiper() {
 
 function Testimonial({text, from, location, starCount}: {text: string, from: string, location: string, starCount: number}) {
     return (
-        <div className='w-full relative h-full bg-white rounded-3xl px-12 py-10 flex flex-col justify-center items-center text-center'>
+        <div className='w-full relative min-h-[250px] h-full bg-white rounded-3xl px-12 py-10 flex flex-col justify-center items-center text-center'>
             <p className=' font-sans text-base pb-3' style={{ color: '#5F5C60'}}>{text}</p>
             <div className='flex flex-row justify-center items-center gap-2'>
                 <Image height={24} src={star} alt='star' />
