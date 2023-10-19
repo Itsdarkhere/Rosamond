@@ -33,7 +33,7 @@ export default function DreamFormSection() {
             <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                 <div className="sm:col-span-3">
                 <label
-                    htmlFor="first-name"
+                    htmlFor="location"
                     className="block text-sm font-medium leading-6 text-gray-900"
                 >
                     Im located in
@@ -41,8 +41,8 @@ export default function DreamFormSection() {
                 <div className="mt-1">
                     <input
                     type="text"
-                    name="first-name"
-                    id="first-name"
+                    name="location"
+                    id="location"
                     autoComplete="given-name"
                     className="block w-full px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     />
@@ -51,7 +51,7 @@ export default function DreamFormSection() {
 
                 <div className="sm:col-span-3">
                 <label
-                    htmlFor="last-name"
+                    htmlFor="startdate"
                     className="block text-sm font-medium leading-6 text-gray-900"
                 >
                     My preferred start date is
@@ -60,7 +60,7 @@ export default function DreamFormSection() {
                     <input
                     type="text"
                     name="last-name"
-                    id="last-name"
+                    id="startdate"
                     autoComplete="family-name"
                     className="block w-full px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     />
@@ -72,7 +72,7 @@ export default function DreamFormSection() {
             <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                 <div className="sm:col-span-3">
                 <label
-                    htmlFor="first-name"
+                    htmlFor="number"
                     className="block text-sm font-medium leading-6 text-gray-900"
                 >
                     My best number is
@@ -80,8 +80,8 @@ export default function DreamFormSection() {
                 <div className="mt-1">
                     <input
                     type="text"
-                    name="first-name"
-                    id="first-name"
+                    name="number"
+                    id="number"
                     autoComplete="given-name"
                     className="block w-full px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     />
@@ -90,7 +90,7 @@ export default function DreamFormSection() {
 
                 <div className="sm:col-span-3">
                 <label
-                    htmlFor="last-name"
+                    htmlFor="email"
                     className="block text-sm font-medium leading-6 text-gray-900"
                 >
                     My best email address is
@@ -99,7 +99,7 @@ export default function DreamFormSection() {
                     <input
                     type="text"
                     name="last-name"
-                    id="last-name"
+                    id="email"
                     autoComplete="family-name"
                     className="block w-full px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     />
