@@ -2,12 +2,12 @@
 export default function DreamFormSection() {
   return (
     <section style={{ background: 'linear-gradient(120deg, #686810, #4C5A1C, #314B26, #173D2E)' }} className='w-full px-4 sm:px-8 md:px-16 pb-16 pt-16 flex flex-row justify-center items-center'>
-        <div className=" max-w-[1920px] w-full flex flex-row gap-10">
+        <div className=" max-w-[1920px] w-full flex flex-row justify-center gap-10">
             <div className=' w-1/3 flex flex-col gap-10'>
                 <h4 className=' text-white text-6xl font-serif'>Pull Up a Chair & Share Your Dream With Us</h4>
                 <p className=' text-white text-4xl font-sans'>At Rosamond Construction, we craft homes, cabinetry, and timeless spaces, but our true masterpiece is the enduring bond we forge with you. Share your vision, and together, let's shape dreams into reality.</p>
             </div>
-            <form className=' w-2/3 bg-white font-sans shadow-sm rounded-lg flex flex-col justify-start items-start p-2 pb-10'>
+            <form className=' w-2/3 max-w-[800px] bg-white font-sans shadow-sm rounded-lg flex flex-col justify-start items-start p-2 pb-10'>
                 <h5 className=' text-3xl text-black font-semibold py-5 px-6 border-b w-full'>Begin Your Rosamond Journey</h5>
                 <div className="col-span-full w-full px-6 mt-4">
                     <label
@@ -22,7 +22,7 @@ export default function DreamFormSection() {
                         id="Name Lastname"
                         required
                         autoComplete="username"
-                        className="block w-full text-xl border-0 border-b-4 bg-transparent py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                        className="block w-full text-xl border-0 border-b-2 bg-transparent py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
                         placeholder="Name Lastname"
                     />
                 </div>
@@ -41,7 +41,7 @@ export default function DreamFormSection() {
                         id="location"
                         autoComplete="given-name"
                         placeholder="City, State"
-                        className="block w-full text-xl border-0 border-b-4 bg-transparent py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                        className="block w-full text-xl border-0 border-b-2 bg-transparent py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
                         />
                     </div>
                     </div>
@@ -60,7 +60,7 @@ export default function DreamFormSection() {
                         id="startdate"
                         placeholder="01/03/2024"
                         autoComplete="family-name"
-                        className="block w-full text-xl border-0 border-b-4 bg-transparent py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                        className="block w-full text-xl border-0 border-b-2 bg-transparent py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
                         />
                     </div>
                     </div>
@@ -90,7 +90,7 @@ export default function DreamFormSection() {
                         id="number"
                         placeholder="+1 (407) 123-3211"
                         autoComplete="given-name"
-                        className="block w-full text-xl border-0 border-b-4 bg-transparent py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                        className="block w-full text-xl border-0 border-b-2 bg-transparent py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
                         />
                     </div>
                     </div>
@@ -109,7 +109,7 @@ export default function DreamFormSection() {
                         id="email"
                         placeholder="Email"
                         autoComplete="family-name"
-                        className="block w-full text-xl border-0 border-b-4 bg-transparent py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                        className="block w-full text-xl border-0 border-b-2 bg-transparent py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
                         />
                     </div>
                     </div>
