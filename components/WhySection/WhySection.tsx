@@ -7,13 +7,13 @@ export default function WhySection() {
   return (
     <section className="py-28 px-4 sm:px-8 md:px-16 flex flex-col justify-center items-center">
         <div className=" max-w-[1920px] w-full flex flex-col justify-center items-center gap-20">
-            <h2 className=" text-white text-5xl font-serif">WHY CHOOSE ROSAMOND CONSTRUCTION</h2>
-            <div className="flex flex-row justify-between gap-16 items-center font-sans">
+            <h2 className=" text-white text-5xl font-serif text-center">WHY CHOOSE ROSAMOND CONSTRUCTION</h2>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 items-center font-sans">
                 <div className="flex flex-col justify-center items-center text-center">
                     <div className=" h-32 w-32 flex justify-center items-center  mb-10 rounded-full" style={{ backgroundColor: '#E3E3E3'}}>
                         <Image src={blueprint} height={94} alt="blueprint" />
                     </div>
-                    <h6 className=" text-3xl pb-9">Souther Soul<br/> Modern Methods</h6>
+                    <h6 className=" text-3xl pb-9">Southern Soul<br/> Modern Methods</h6>
                     <p className=" text-lg">At Rosamond, we respect tradition but aren't bound by it. Our techniques are state-of-the-art, ensuring homes that not only look great but are also structurally sound and energy efficient.</p>
                 </div>
                 <div className="flex flex-col justify-center items-center text-center">

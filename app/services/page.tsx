@@ -27,9 +27,9 @@ export default function AboutUs() {
                     <h2 className=" text-white text-5xl font-serif">Services We Offer</h2>
                     <div className="w-full py-96 overflow-hidden rounded-3xl relative">
                         <Image className=" object-cover" fill src={serv1} alt="hero picture" />
-                        <div className=" absolute left-0 top-0 bottom-0 bg-black bg-opacity-75 w-1/2 flex flex-col py-20 px-10">
-                            <h5 className=" text-white text-5xl pb-9 font-serif">INTERIOR REMODELS</h5>
-                            <ul className=" text-2xl flex flex-col gap-3 font-sans">
+                        <div className=" absolute left-0 top-0 bottom-0 bg-black bg-opacity-75 w-4/5 lg:w-1/2 flex flex-col py-20 px-10">
+                            <h5 className=" text-white text-2xl md:text-5xl pb-9 font-serif">INTERIOR REMODELS</h5>
+                            <ul className=" text-base md:text-2xl flex flex-col gap-3 font-sans">
                                 <li>Kitchen upgrades and renovations</li>
                                 <li>Bathroom makeovers and expansions</li>
                                 <li>Living room redesigns</li>
@@ -44,9 +44,9 @@ export default function AboutUs() {
                     </div>
                     <div className="w-full py-96 overflow-hidden rounded-3xl relative">
                         <Image className=" object-cover" fill src={serv2} alt="hero picture" />
-                        <div className=" absolute right-0 top-0 bottom-0 bg-black bg-opacity-75 w-1/2 flex flex-col py-20 px-10">
-                            <h5 className=" text-white text-5xl pb-9 font-serif">CUSTOM HOMES</h5>
-                            <ul className=" text-2xl flex flex-col gap-3 font-sans">
+                        <div className=" absolute right-0 top-0 bottom-0 bg-black bg-opacity-75 w-4/5 lg:w-1/2 flex flex-col py-20 px-10">
+                            <h5 className=" text-white text-2xl md:text-5xl pb-9 font-serif">CUSTOM HOMES</h5>
+                            <ul className=" text-base md:text-2xl flex flex-col gap-3 font-sans">
                                 <li>Foundation and structural work</li>
                                 <li>Exterior facades and finishes</li>
                                 <li>Roofing and insulation</li>
@@ -61,9 +61,9 @@ export default function AboutUs() {
                     </div>
                     <div className="w-full py-96 overflow-hidden rounded-3xl relative">
                         <Image className=" object-cover" fill src={serv3} alt="hero picture" />
-                        <div className=" absolute left-0 top-0 bottom-0 bg-black bg-opacity-75 w-1/2 flex flex-col py-20 px-10">
-                            <h5 className=" text-white text-5xl pb-9 font-serif">CABINETRY & WOODWORKING</h5>
-                            <ul className=" text-2xl flex flex-col gap-3 font-sans">
+                        <div className=" absolute left-0 top-0 bottom-0 bg-black bg-opacity-75 w-4/5 lg:w-1/2 flex flex-col py-20 px-10">
+                            <h5 className=" text-white text-2xl md:text-5xl pb-9 font-serif">CABINETRY & WOODWORKING</h5>
+                            <ul className=" text-base md:text-2xl flex flex-col gap-3 font-sans">
                                 <li>Kitchen and bathroom cabinetry</li>
                                 <li>Customized storage solutions</li>
                                 <li>Architectural moldings and trims</li>
