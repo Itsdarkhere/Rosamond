@@ -1,11 +1,22 @@
 import Nav from '@/components/Nav'
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Instrument_Sans, Instrument_Serif } from 'next/font/google'
 import Footer from '@/components/Footer'
 import ProgressProvider from '@/components/ProgressProvider'
 
-const inter = Inter({ subsets: ['latin'] })
+const sans = Instrument_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-sans',
+})
+
+const serif = Instrument_Serif({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-serif',
+  weight: '400'
+})
 
 export const metadata: Metadata = {
   title: 'Rosamond construction',
@@ -19,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${sans.variable} ${serif.variable}`}>
         <Nav />
         <ProgressProvider>
           {children}

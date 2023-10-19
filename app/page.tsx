@@ -12,34 +12,34 @@ export default function Home() {
        <section className="w-full h-full relative">
           <Image priority fill className=' z-0 brightness-50 object-cover' src={hero} alt='Beautiful house' />
           <div className=' relative z-20 flex flex-col justify-center items-center text-center py-96 px-4 sm:px-8 md:px-16 text-white'>
-            <h1 className=' text-7xl'>Arkansas Diamond Standard Homes & Interiors</h1>
-            <h3 className=' mt-10 max-w-[966px] text-3xl'>Where unparalleled craftsmanship meets Southern charm. Dive into a legacy of luxury - affordable, honest and uniquely yours.</h3>
-            <button className=' mt-10 text-2xl text-black py-3 px-4 rounded-full bg-white'>GET STARTED</button>
+            <h1 className=' text-7xl font-serif'>Arkansas Diamond Standard Homes & Interiors</h1>
+            <h3 className=' mt-10 max-w-[966px] text-3xl font-sans'>Where unparalleled craftsmanship meets Southern charm. Dive into a legacy of luxury - affordable, honest and uniquely yours.</h3>
+            <button className=' mt-10 text-2xl text-black py-3 px-4 rounded-full bg-white font-sans font-semibold'>GET STARTED</button>
           </div>
        </section>
        <section className=' py-28 px-32 flex flex-col justify-center items-center'>
           <div className='max-w-[800px] text-center'>
-            <h6 className=' text-2xl text-white'>about</h6>
+            <h6 className=' text-2xl text-white font-sans'>about</h6>
             {/* SVG HERE */}
-            <h4 className=' text-white text-5xl mt-9'>ROSAMOND CONSTRUCTION</h4>
-            <p className=' text-white text-xl mt-9'>From the heart of Springdale, Arkansas, Rosamond Construction upholds the essence of Southern craftsmanship and values. We're more than just builders; we're neighbors dedicated to integrity and community. We offer more than upscale, quality construction; we provide homes where families can grow, and memories are forged. From our family to yours, we promise affordability without compromising on luxury. At Rosamond Construction, your dream home isn't just a project—it's a commitment, a legacy. Let's craft homes filled with heart and soul, together.</p>
+            <h4 className=' text-white text-5xl mt-9 font-serif'>ROSAMOND CONSTRUCTION</h4>
+            <p className=' text-white text-xl mt-9 font-sans'>From the heart of Springdale, Arkansas, Rosamond Construction upholds the essence of Southern craftsmanship and values. We're more than just builders; we're neighbors dedicated to integrity and community. We offer more than upscale, quality construction; we provide homes where families can grow, and memories are forged. From our family to yours, we promise affordability without compromising on luxury. At Rosamond Construction, your dream home isn't just a project—it's a commitment, a legacy. Let's craft homes filled with heart and soul, together.</p>
           </div>
        </section>
        <section className=' flex px-4 sm:px-8 md:px-16  flex-col w-full justify-center items-center'>
         <div className=" max-w-[1920px] w-full flex flex-col justify-center items-center gap-4">
-          <h3 className=' text-3xl text-white'>Where Arkansas Dreams Meet Superior Craft</h3>
+          <h3 className=' text-3xl text-white font-serif'>Where Arkansas Dreams Meet Superior Craft</h3>
           <div className='w-full flex flex-row justify-between'>
             <Link className=' rounded-3xl bg-blue-200 px-16 py-36 flex flex-col' href={'/services'}>
               <div className=' h-10 w-10 rounded-full bg-black'></div>
-              <h5 className='max-w-250px text-white'>CUSTOM HOMES</h5>
+              <h5 className='max-w-250px text-white font-sans font-semibold'>CUSTOM HOMES</h5>
             </Link>
             <Link className=' rounded-3xl bg-blue-200 px-16 py-36 flex flex-col' href={'/services'}>
               <div className=' h-10 w-10 rounded-full bg-black'></div>
-              <h5 className='max-w-250px text-white'>INTERIOR REMODELS</h5>
+              <h5 className='max-w-250px text-white font-sans font-semibold'>INTERIOR REMODELS</h5>
             </Link>
             <Link className=' rounded-3xl bg-blue-200 px-16 py-36 flex flex-col' href={'/services'}>
               <div className=' h-10 w-10 rounded-full bg-black'></div>
-              <h5 className=' max-w-250px text-white'>CABINETRY & WOODWORKING</h5>
+              <h5 className=' max-w-250px text-white font-sans font-semibold'>CABINETRY & WOODWORKING</h5>
             </Link>
           </div>
         </div>

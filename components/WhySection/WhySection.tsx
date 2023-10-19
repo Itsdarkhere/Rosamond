@@ -3,8 +3,8 @@ export default function WhySection() {
   return (
     <section className="py-28 px-4 sm:px-8 md:px-16 flex flex-col justify-center items-center">
         <div className=" max-w-[1920px] w-full flex flex-col justify-center items-center gap-20">
-            <h2 className=" text-white text-3xl">WHY CHOOSE ROSAMOND CONSTRUCTION</h2>
-            <div className="flex flex-row justify-between items-center">
+            <h2 className=" text-white text-3xl font-serif">WHY CHOOSE ROSAMOND CONSTRUCTION</h2>
+            <div className="flex flex-row justify-between items-center font-sans">
                 <div className="flex flex-col justify-center items-center text-center">
                     <div className=" h-20 w-20 mb-10 bg-gray-300 rounded-full"></div>
                     <h6 className=" text-lg">Souther Soul Modern Methods</h6>

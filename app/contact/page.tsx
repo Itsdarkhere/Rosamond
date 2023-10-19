@@ -10,8 +10,8 @@ export default function Contact() {
             <section className="w-full h-full px-4 sm:px-8 md:px-16 pb-24 flex justify-center items-center">
                 <div className=" max-w-[1920px] mt-32 overflow-hidden w-full h-full rounded-3xl bg-white flex flex-row">
                     <form className=" flex flex-col w-1/2 py-20 px-28">
-                        <h5 className=" text-5xl text-black">Get in Touch</h5>
-                        <p className=" text-sm text-black">Whether you're an existing customer with inquiries or someone new with a dream project in mind, we're here to listen, assist, and guide. Get in touch with Rosamond Construction today.</p>
+                        <h5 className=" text-5xl text-black font-serif">Get in Touch</h5>
+                        <p className=" text-sm text-black font-sans">Whether you're an existing customer with inquiries or someone new with a dream project in mind, we're here to listen, assist, and guide. Get in touch with Rosamond Construction today.</p>
                         <div className="flex mb-4 rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
                             <input
                             type="text"
@@ -56,21 +56,21 @@ export default function Contact() {
                             placeholder="How did you find us?"
                             />
                         </div>
-                        <button type="submit" className=" rounded-3xl bg-black w-full py-6">SUBMIT</button>
-                        <Link href={'/submit'}>Want to submit a construction idea?</Link>
+                        <button type="submit" className=" rounded-3xl bg-black w-full py-6 font-sans">SUBMIT</button>
+                        <Link className="font-sans" href={'/submit'}>Want to submit a construction idea?</Link>
                         <div className="flex flex-row justify-start items-center text-black">
                             <div className="flex flex-row">
                                 <div className=" h-10 w-10 rounded-full bg-gray-400"></div>
-                                <div className="flex flex-col">
-                                    <h6>PHONE</h6>
-                                    <p>(479) 957-2611</p>
+                                <div className="flex flex-col text-xs">
+                                    <h6 className=" font-sans font-semibold">PHONE</h6>
+                                    <p className=" font-sans">(479) 957-2611</p>
                                 </div>
                             </div>
                             <div className="flex flex-row">
                                 <div className=" h-10 w-10 rounded-full bg-gray-400"></div>
-                                <div className="flex flex-col">
-                                    <h6>EMAIL</h6>
-                                    <p>CONTACT@ROSAMONDCONSTRUCTION.COM</p>
+                                <div className="flex flex-col text-xs">
+                                    <h6 className=" font-sans font-semibold">EMAIL</h6>
+                                    <p className=" font-sans">CONTACT@ROSAMONDCONSTRUCTION.COM</p>
                                 </div>
                             </div>
                         </div>
