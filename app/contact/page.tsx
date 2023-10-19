@@ -13,71 +13,73 @@ export default function Contact() {
         <div style={{ backgroundColor: '#161616'}} className="flex relative flex-col items-center justify-between">
             <section className="w-full h-full px-4 sm:px-8 md:px-16 pb-24 flex justify-center items-center">
                 <div className=" max-w-[1920px] mt-32 overflow-hidden w-full h-full rounded-3xl bg-white flex flex-row">
-                    <form className=" flex flex-col w-1/2 py-20 px-28">
-                        <h5 className=" text-5xl text-black font-serif pb-5">Get in Touch</h5>
-                        <p className=" text-sm text-black font-sans pb-7">Whether you're an existing customer with inquiries or someone new with a dream project in mind, we're here to listen, assist, and guide. Get in touch with Rosamond Construction today.</p>
-                        <div className="flex mb-4 rounded-lg shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600">
-                            <input
-                                type="text"
-                                name="username"
-                                id="Name Lastname"
-                                required
-                                autoComplete="username"
-                                className="block w-full border-0 px-2 bg-transparent py-2.5 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
-                                placeholder="Name"
-                            />
-                        </div>
-                        <div className="flex mb-4 rounded-lg shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600">
-                            <input
-                                type="text"
-                                name="username"
-                                id="Name Lastname"
-                                required
-                                autoComplete="Email"
-                                className="block w-full border-0 px-2 bg-transparent py-2.5 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
-                                placeholder="janesmith"
-                            />
-                        </div>
-                        <div className="flex mb-4 rounded-lg shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600">
-                            <input
-                                type="text"
-                                name="username"
-                                id="Name Lastname"
-                                required
-                                autoComplete="username"
-                                className="block w-full border-0 px-2 bg-transparent py-2.5 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
-                                placeholder="Phone Number"
-                            />
-                        </div>
-                        <div className="w-full flex mb-4 rounded-lg shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600">
-                            <input
-                                type="text"
-                                name="username"
-                                id=""
-                                required
-                                autoComplete="username"
-                                className="block w-full border-0 px-2 bg-transparent py-2.5 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
-                                placeholder="How did you find us?"
-                            />
-                        </div>
-                        <button type="submit" className=" rounded-full flex flex-row justify-center items-center gap-2 bg-black w-full py-3 font-sans">
-                            SUBMIT
-                            <Image src={arrowright} alt="arrow right" height={15} />
-                        </button>
-                        <Link style={{color: '#828282'}} className="font-sans mt-3 leading-5 text-sm underline w-full text-center" href={'/submit'}>Want to submit a construction idea?</Link>
-                        <div className="flex flex-row justify-start flex-wrap items-center text-black gap-10 mt-12">
-                            <div className="flex flex-row gap-3">
-                                <Image src={phone} alt="phone" height={23} />
-                                <div className="flex flex-col text-xs">
-                                    <h6 className=" font-sans font-semibold">PHONE</h6>
-                                    <p className=" font-sans">(479) 957-2611</p>
-                                </div>
+                    <form className=" flex flex-col justify-start items-center w-1/2 py-20 px-28">
+                        <div className="flex flex-col w-full max-w-[475px]">
+                            <h5 className=" text-5xl text-black font-serif pb-5">Get in Touch</h5>
+                            <p className=" text-sm text-black font-sans pb-7">Whether you're an existing customer with inquiries or someone new with a dream project in mind, we're here to listen, assist, and guide. Get in touch with Rosamond Construction today.</p>
+                            <div className="flex mb-4 rounded-lg shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600">
+                                <input
+                                    type="text"
+                                    name="username"
+                                    id="Name Lastname"
+                                    required
+                                    autoComplete="username"
+                                    className="block w-full border-0 px-2 bg-transparent py-2.5 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                                    placeholder="Name"
+                                />
                             </div>
-                            <div className="flex flex-row gap-3">
-                                <Image src={mail} alt="email" height={23} />
-                                <div className="flex flex-col text-xs">
-                                    <h6 className=" font-sans font-semibold">EMAIL</h6>
-                                    <p className=" font-sans">CONTACT@ROSAMONDCONSTRUCTION.COM</p>
+                            <div className="flex mb-4 rounded-lg shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600">
+                                <input
+                                    type="text"
+                                    name="username"
+                                    id="Name Lastname"
+                                    required
+                                    autoComplete="Email"
+                                    className="block w-full border-0 px-2 bg-transparent py-2.5 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                                    placeholder="janesmith"
+                                />
+                            </div>
+                            <div className="flex mb-4 rounded-lg shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600">
+                                <input
+                                    type="text"
+                                    name="username"
+                                    id="Name Lastname"
+                                    required
+                                    autoComplete="username"
+                                    className="block w-full border-0 px-2 bg-transparent py-2.5 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                                    placeholder="Phone Number"
+                                />
+                            </div>
+                            <div className="w-full flex mb-4 rounded-lg shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600">
+                                <input
+                                    type="text"
+                                    name="username"
+                                    id=""
+                                    required
+                                    autoComplete="username"
+                                    className="block w-full border-0 px-2 bg-transparent py-2.5 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                                    placeholder="How did you find us?"
+                                />
+                            </div>
+                            <button type="submit" className=" rounded-full flex flex-row justify-center items-center gap-2 bg-black w-full py-3 font-sans">
+                                SUBMIT
+                                <Image src={arrowright} alt="arrow right" height={15} />
+                            </button>
+                            <Link style={{color: '#828282'}} className="font-sans mt-3 leading-5 text-sm underline w-full text-center" href={'/submit'}>Want to submit a construction idea?</Link>
+                            <div className="flex flex-row justify-start flex-wrap items-center text-black gap-10 mt-12">
+                                <div className="flex flex-row gap-3">
+                                    <Image src={phone} alt="phone" height={23} />
+                                    <div className="flex flex-col text-xs">
+                                        <h6 className=" font-sans font-semibold">PHONE</h6>
+                                        <p className=" font-sans">(479) 957-2611</p>
+                                    </div>
+                                </div>
+                                <div className="flex flex-row gap-3">
+                                    <Image src={mail} alt="email" height={23} />
+                                    <div className="flex flex-col text-xs">
+                                        <h6 className=" font-sans font-semibold">EMAIL</h6>
+                                        <p className=" font-sans">CONTACT@ROSAMONDCONSTRUCTION.COM</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
