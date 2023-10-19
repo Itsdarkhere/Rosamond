@@ -1,7 +1,7 @@
 
 export default function DreamFormSection() {
   return (
-    <section className='w-full px-4 sm:px-8 md:px-16 flex flex-row justify-center items-center'>
+    <section className='w-full px-4 sm:px-8 md:px-16 pb-16 flex flex-row justify-center items-center'>
         <div className=" max-w-[1920px] w-full flex flex-row gap-10">
             <div className=' w-1/3 flex flex-col gap-10'>
             <h4 className=' text-white text-2xl'>Pull Up a Chair & Share Your Dream With Us</h4>

@@ -26,8 +26,8 @@ export default function Home() {
           </div>
        </section>
        <section className=' flex px-4 sm:px-8 md:px-16  flex-col w-full justify-center items-center'>
-        <div className=" max-w-[1920px] w-full flex-col justify-center items-center gap-4">
-          <h3>Where Arkansas Dreams Meet Superior Craft</h3>
+        <div className=" max-w-[1920px] w-full flex flex-col justify-center items-center gap-4">
+          <h3 className=' text-3xl text-white'>Where Arkansas Dreams Meet Superior Craft</h3>
           <div className='w-full flex flex-row justify-between'>
             <Link className=' rounded-3xl bg-blue-200 px-16 py-36 flex flex-col' href={'/services'}>
               <div className=' h-10 w-10 rounded-full bg-black'></div>
