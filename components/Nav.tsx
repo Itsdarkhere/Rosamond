@@ -1,6 +1,7 @@
 import Link from "next/link"
 import logo from '../public/logo.svg'
 import Image from "next/image"
+import BurgerMenu from "./BurgerMenu"
 
 export default function Nav() {
   return (
@@ -10,13 +11,14 @@ export default function Nav() {
                 <Image height={26} src={logo} alt="logo" />
                 <h1 className=" text-2xl font-serif">ROSAMOND CONSTRUCTION</h1>
             </Link>
-            <nav className="flex flex-row gap-7">
+            <nav className="hidden md:flex flex-row gap-7">
                 <Link className=" text-white text-base font-sans" href={'/'}>Home</Link>
                 <Link className=" text-white text-base font-sans" href={'/aboutus'}>About Us</Link>
                 <Link className=" text-white text-base font-sans" href={'/services'}>Services</Link>
                 <Link className=" text-white text-base font-sans" href={'/portfolio'}>Portfolio</Link>
                 <Link className=" text-white text-base font-sans" href={'/contact'}>Contact</Link>
             </nav>
+            <BurgerMenu />
         </div>
     </header>
   )

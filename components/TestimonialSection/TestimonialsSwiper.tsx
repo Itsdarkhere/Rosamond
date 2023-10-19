@@ -16,10 +16,17 @@ export default function TestimonialsSwiper() {
         navigation={false}
         className=' aspect-[8/2] w-full px-52'
         spaceBetween={50}
-        slidesPerGroup={2}
-        slidesPerView={2.2}
+        slidesPerGroup={1}
+        slidesPerView={1.2}
         speed={500}
         pagination={false}
+        breakpoints={{
+            1000: {
+                slidesPerView: 2.2,
+                slidesPerGroup: 2,
+                spaceBetween: 50
+            },
+        }}
         >
         <SwiperSlide className='w-full h-full'>
             <Testimonial 

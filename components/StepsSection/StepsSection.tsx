@@ -3,8 +3,8 @@ export default function StepsSection() {
   return (
         <section className=' flex gap-10 py-28 px-4 sm:px-8 md:px-16 flex-col justify-center items-center w-full'>
             <div className=" max-w-[1920px] w-full flex flex-col justify-center items-center gap-10">
-                <h2 className=' text-5xl text-white font-serif'>How We Bring Your Vision To Life</h2>
-                <div className=' flex flex-row gap-6'>
+                <h2 className=' text-5xl text-white font-serif text-center'>How We Bring Your Vision To Life</h2>
+                <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
                     <div className='flex flex-col text-center items-center'>
                         <div className='w-24 h-24 font-bold text-5xl flex justify-center items-center mb-9 bg-gray-400 border-4 rounded-full' style={{borderColor: '#81864A', color: '#81864A', backgroundColor: '#F4F4F4'}}>
                             1

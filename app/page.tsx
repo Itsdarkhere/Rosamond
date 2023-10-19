@@ -26,7 +26,7 @@ export default function Home() {
             </button>
           </div>
        </section>
-       <section className=' py-28 px-32 flex flex-col justify-center items-center'>
+       <section className=' py-28 px-4 sm:px-8 md:px-16 flex flex-col justify-center items-center'>
           <div className='max-w-[800px] flex flex-col justify-center items-center text-center'>
             <h6 className=' text-2xl text-white font-sans pb-5'>about</h6>
             <Image height={35} src={line} alt='line' />
@@ -40,7 +40,7 @@ export default function Home() {
        </section>
        <section className=' flex px-4 sm:px-8 md:px-16  flex-col w-full justify-center items-center'>
         <div className=" max-w-[1920px] w-full flex pt-6 pb-10 flex-col justify-center items-center gap-10">
-          <h3 className=' text-5xl text-white font-serif'>Where Arkansas Dreams Meet Superior Craft</h3>
+          <h3 className=' text-5xl text-white font-serif text-center'>Where Arkansas Dreams Meet Superior Craft</h3>
           <div className='w-full flex flex-row justify-between gap-10'>
             <Link className=' w-1/3 rounded-3xl overflow-hidden aspect-[11/12] flex flex-col relative' href={'/services'}>
               <Image className=' object-cover brightness-75' src={ch} fill alt='interior of a house' />
