@@ -1,5 +1,6 @@
 import Image from "next/image"
 import hero from '../../public/hero.jpg'
+import DreamFormSection from "@/components/DreamFormSection/DreamFormSection"
 
 export default function AboutUs() {
     return (
@@ -87,6 +88,7 @@ export default function AboutUs() {
                 </div>
                 <button className=" py-4 px-8 rounded-2xl text-black bg-white">EXPLORE OUR PORTFOLIO</button>
             </section>
+            <DreamFormSection />
         </div>
     )
 }
