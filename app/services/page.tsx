@@ -1,5 +1,9 @@
 import Image from "next/image"
-import hero from '../../public/hero.jpg'
+import services from '../../public/services.avif'
+import serv1 from '../../public/serv1.avif'
+import serv2 from '../../public/serv2.avif'
+import serv3 from '../../public/serv3.avif'
+import blackarrowright from '../../public/blackarrowright.svg'
 import DreamFormSection from "@/components/DreamFormSection/DreamFormSection"
 import WhySection from "@/components/WhySection/WhySection"
 
@@ -7,19 +11,22 @@ export default function AboutUs() {
     return (
         <div style={{ backgroundColor: '#161616'}} className="flex relative flex-col items-center justify-between">
             <section className="w-full px-4 sm:px-8 md:px-16 h-full relative flex justify-center items-center">
-                <Image priority fill className=' z-0 brightness-50 object-cover' src={hero} alt='Beautiful house' />
+                <Image priority fill className=' z-0 brightness-50 object-cover' src={services} alt='Beautiful house' />
                 <div className=' max-w-[1920px] relative z-20 flex flex-col justify-center items-center text-center py-96 text-white'>
                     <h1 className=' text-7xl font-serif'>Where Arkansas Dreams Meet Superior Craft</h1>
-                    <h3 className=' mt-10 max-w-[966px] text-3xl font-sans'>Your dream, our craftsmanship.</h3>
-                    <button className=' mt-10 text-2xl text-black py-3 px-4 rounded-full bg-white'>SHARE YOUR VISION</button>
+                    <h3 className=' mt-10 max-w-[966px] text-4xl font-sans'>Your dream, our craftsmanship.</h3>
+                    <button className=' mt-10 text-2xl text-black py-3 px-4 rounded-full bg-white flex flex-row justify-center items-center gap-3'>
+                        SHARE YOUR VISION
+                        <Image src={blackarrowright} alt="arrow right" height={16} />
+                    </button>
                 </div>
             </section>  
             <WhySection />
-            <section  className="w-full pb-28 px-4 sm:px-8 md:px-16 flex flex-col justify-center items-center">
+            <section  className="w-full pb-28 pt-16 px-4 sm:px-8 md:px-16 flex flex-col justify-center items-center">
                 <div className=" max-w-[1920px] w-full flex flex-col justify-center items-center gap-10">
-                    <h2 className=" text-white text-3xl font-serif">Services We Offer</h2>
+                    <h2 className=" text-white text-5xl font-serif">Services We Offer</h2>
                     <div className="w-full py-96 overflow-hidden rounded-3xl relative">
-                        <Image fill src={hero} alt="hero picture" />
+                        <Image className=" object-cover" fill src={serv1} alt="hero picture" />
                         <div className=" absolute left-0 top-0 bottom-0 bg-black bg-opacity-75 w-1/2 flex flex-col py-20 px-10">
                             <h5 className=" text-white text-5xl pb-9 font-serif">INTERIOR REMODELS</h5>
                             <ul className=" text-2xl flex flex-col gap-3 font-sans">
@@ -36,7 +43,7 @@ export default function AboutUs() {
                         </div>
                     </div>
                     <div className="w-full py-96 overflow-hidden rounded-3xl relative">
-                        <Image fill src={hero} alt="hero picture" />
+                        <Image className=" object-cover" fill src={serv2} alt="hero picture" />
                         <div className=" absolute right-0 top-0 bottom-0 bg-black bg-opacity-75 w-1/2 flex flex-col py-20 px-10">
                             <h5 className=" text-white text-5xl pb-9 font-serif">CUSTOM HOMES</h5>
                             <ul className=" text-2xl flex flex-col gap-3 font-sans">
@@ -53,7 +60,7 @@ export default function AboutUs() {
                         </div>
                     </div>
                     <div className="w-full py-96 overflow-hidden rounded-3xl relative">
-                        <Image fill src={hero} alt="hero picture" />
+                        <Image className=" object-cover" fill src={serv3} alt="hero picture" />
                         <div className=" absolute left-0 top-0 bottom-0 bg-black bg-opacity-75 w-1/2 flex flex-col py-20 px-10">
                             <h5 className=" text-white text-5xl pb-9 font-serif">CABINETRY & WOODWORKING</h5>
                             <ul className=" text-2xl flex flex-col gap-3 font-sans">
