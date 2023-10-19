@@ -13,7 +13,7 @@ export default function Contact() {
         <div style={{ backgroundColor: '#161616'}} className="flex relative flex-col items-center justify-between">
             <section className="w-full h-full px-4 sm:px-8 md:px-16 pb-24 flex justify-center items-center">
                 <div className=" max-w-[1920px] mt-32 overflow-hidden w-full h-full rounded-3xl bg-white flex flex-row">
-                    <form className=" flex flex-col justify-start items-center w-1/2 py-20 px-28">
+                    <form className=" flex flex-col justify-start items-center w-full lg:w-1/2 py-20 px-5 md:px-20 lg:px-28">
                         <div className="flex flex-col w-full max-w-[475px]">
                             <h5 className=" text-5xl text-black font-serif pb-5">Get in Touch</h5>
                             <p className=" text-sm text-black font-sans pb-7">Whether you're an existing customer with inquiries or someone new with a dream project in mind, we're here to listen, assist, and guide. Get in touch with Rosamond Construction today.</p>
@@ -84,7 +84,7 @@ export default function Contact() {
                             </div>
                         </div>
                     </form>
-                    <div className="relative flex-1 w-1/2 flex justify-start items-center">
+                    <div className="relative flex-1 w-1/2 hidden lg:flex justify-start items-center">
                         <GoogleMap />
                         <Image className=" object-cover" src={contact} alt="hero" fill />
                     </div>
