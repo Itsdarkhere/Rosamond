@@ -1,5 +1,21 @@
+'use client'
+import Image from "next/image";
+import submit from '../../public/submit.svg';
+import { Dispatch, SetStateAction } from "react"
+import chevrondown from '../../public/chevrondown.svg'
+import { useState } from "react";
 
 export default function DreamFormSection() {
+    const [selectedValue, setSelectedValue] = useState('Custom Home Build');
+    const options = [
+        'Custom Home Build',
+        'Interior Remodel',
+        'Custom Woodworking',
+        'Custom Cabinetry',
+        'General Inquiry',
+        'Other'
+    ];
+
   return (
     <section style={{ background: 'linear-gradient(120deg, #686810, #4C5A1C, #314B26, #173D2E)' }} className='w-full px-4 sm:px-8 md:px-16 pb-16 pt-16 flex flex-row justify-center items-center'>
         <div className=" max-w-[1920px] w-full flex flex-col md:flex-row justify-center gap-10">
@@ -65,15 +81,17 @@ export default function DreamFormSection() {
                     </div>
                     </div>
                 </div>
-                <h6 className=" block text-2xl font-medium text-gray-900 mx-6 mt-9 leading-10">Im interested in...</h6>
+                <h6 className=" block text-2xl font-medium text-gray-900 mx-6 mt-9 pb-2 leading-10">Im interested in...</h6>
                 <div className="flex flex-row flex-wrap gap-4 mx-6">
-                    <button className=" py-3 px-5 text-center text-white bg-black rounded-2xl border">Custom Home Build</button>
-                    <button className=" py-3 px-5 text-center text-gray-300 bg-white rounded-2xl border border-gray-300">Custom Home Build</button>
-                    <button className=" py-3 px-5 text-center text-gray-300 bg-white rounded-2xl border border-gray-300">Interior Remodel</button>
-                    <button className=" py-3 px-5 text-center text-gray-300 bg-white rounded-2xl border border-gray-300">Custom Woodworking</button>
-                    <button className=" py-3 px-5 text-center text-gray-300 bg-white rounded-2xl border border-gray-300">Custom Cabinetry</button>
-                    <button className=" py-3 px-5 text-center text-gray-300 bg-white rounded-2xl border border-gray-300">General Inquiry</button>
-                    <button className=" py-3 px-5 text-center text-gray-300 bg-white rounded-2xl border border-gray-300">Other</button>
+                    {options.map((option) => (
+                        <RadioButton
+                            key={option}
+                            label={option}
+                            value={option}
+                            selectedValue={selectedValue}
+                            setSelectedValue={setSelectedValue}
+                        />
+                    ))}
                 </div>
                 <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 w-full px-6 mt-9">
                     <div className="sm:col-span-3">
@@ -121,17 +139,20 @@ export default function DreamFormSection() {
                     >
                     My estimated budget is
                     </label>
-                    <div className="mt-1">
-                    <select
-                        id="country"
-                        name="country"
-                        autoComplete="country-name"
-                        className="block max-w-[450px] w-full rounded-md border-0 py-4 px-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-formfocus sm:text-sm sm:leading-6"
-                    >
-                        <option>United States</option>
-                        <option>Canada</option>
-                        <option>Mexico</option>
-                    </select>
+                    <div className="mt-2 max-w-[450px] relative flex flex-row justify-center items-center w-full">
+                        <select
+                            id="country"
+                            name="country"
+                            autoComplete="country-name"
+                            defaultValue={'empty'}
+                            className="appearance-none text-gray-900 rounded-2xl ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-formfocus w-full h-full py-4 px-3 sm:text-sm sm:leading-6 border-0 outline-none"
+                        >
+                            <option value="empty" disabled>Select budget</option>
+                            <option className="">United States</option>
+                            <option className="">Canada</option>
+                            <option className="">Mexico</option>
+                        </select>
+                        <Image className=" absolute touch-none right-5" src={chevrondown} alt="arrow down" height={9} />
                     </div>
                 </div>
                 <div className="col-span-full w-full px-6 mt-9">
@@ -139,22 +160,39 @@ export default function DreamFormSection() {
                     htmlFor="about"
                     className="block text-2xl font-medium leading-10 text-gray-900"
                     >
-                    More about my project
+                        More about my project
                     </label>
-                    <div className="mt-1">
-                    <textarea
-                        id="about"
-                        name="about"
-                        rows={3}
-                        className="block w-full h-40 px-2 rounded-md outline-none border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-formfocus sm:text-sm sm:leading-6"
-                    />
+                    <div className="mt-2">
+                        <textarea
+                            id="about"
+                            name="about"
+                            rows={3}
+                            placeholder="Optional"
+                            className="block w-full h-40 px-2 rounded-md outline-none border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-formfocus sm:text-sm sm:leading-6"
+                        />
                     </div>
                 </div>
-                <button className=' mx-6 px-8 py-4 rounded-xl mt-10 bg-black text-white' type='submit'>
+                <button className=' mx-6 px-8 py-4 flex flex-row items-center justify-center gap-2 rounded-xl mt-10 bg-black text-white' type='submit'>
+                    <Image src={submit} height={16} alt="submit icon" />
                     Submit Inquiry
                 </button>
             </form>
         </div>
     </section>
   )
+}
+
+const RadioButton = ({label, value, selectedValue, setSelectedValue}: {label: string, value: string, selectedValue: string, setSelectedValue: Dispatch<SetStateAction<string>>}) => {
+    return (
+        <label className={`${selectedValue === value ? 'bg-black text-white border-formfocus' : ' bg-white text-gray-400 border-gray-400'} inline-flex items-center cursor-pointer py-3 px-5 text-center rounded-2xl border-2`}>
+            <input
+                type="radio"
+                className="hidden"
+                value={value}
+                checked={selectedValue === value}
+                onChange={() => setSelectedValue(value)}
+            />
+            <span className="touch-none">{label}</span>
+        </label>
+    )
 }
