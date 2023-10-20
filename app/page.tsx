@@ -17,7 +17,7 @@ export default function Home() {
     <main style={{ backgroundColor: '#161616'}} className="flex relative flex-col items-center justify-between">
        <section className="w-full h-full relative">
           <Image priority fill className=' z-0 brightness-50 object-cover' src={hero} alt='Beautiful house' />
-          <div className=' relative z-20 flex flex-col justify-center items-center text-center py-60 sm:py-96 px-4 sm:px-8 md:px-16 text-white'>
+          <div className=' relative z-20 flex flex-col justify-center items-center text-center py-60 sm:py-80 px-4 sm:px-8 md:px-16 text-white'>
             <h1 className=' text-5xl sm:text-7xl font-serif'>Arkansas Diamond Standard Homes & Interiors</h1>
             <h3 className=' mt-3  sm:mt-10 max-w-[966px] text-lg sm:text-3xl font-sans'>Where unparalleled craftsmanship meets Southern charm. Dive into a legacy of luxury - affordable, honest and uniquely yours.</h3>
             <button className=' mt-10 text-base sm:text-2xl text-black py-3 px-4 gap-3 flex flex-row justify-center items-center rounded-full bg-white hover:bg-gray-200 font-sans font-semibold'>

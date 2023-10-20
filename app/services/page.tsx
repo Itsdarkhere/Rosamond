@@ -12,7 +12,7 @@ export default function AboutUs() {
         <div style={{ backgroundColor: '#161616'}} className="flex relative flex-col items-center justify-between">
             <section className="w-full px-4 sm:px-8 md:px-16 h-full relative flex justify-center items-center">
                 <Image priority fill className=' z-0 brightness-50 object-cover' src={services} alt='Beautiful house' />
-                <div className=' max-w-[1920px] relative z-20 flex flex-col justify-center items-center text-center py-60 sm:py-96 text-white'>
+                <div className=' max-w-[1920px] relative z-20 flex flex-col justify-center items-center text-center py-60 sm:py-80 text-white'>
                     <h1 className=' text-4xl sm:text-7xl font-serif'>Where Arkansas Dreams Meet Superior Craft</h1>
                     <h3 className=' mt-3 sm:mt-10 max-w-[966px] text-xl sm:text-4xl font-sans'>Your dream, our craftsmanship.</h3>
                     <button className=' mt-10 text-lg sm:text-2xl text-black py-3 px-4 rounded-full bg-white hover:bg-gray-200 flex flex-row justify-center items-center gap-3'>
@@ -25,7 +25,7 @@ export default function AboutUs() {
             <section  className="w-full pb-28 pt-16 px-4 sm:px-8 md:px-16 flex flex-col justify-center items-center">
                 <div className=" max-w-[1920px] w-full flex flex-col justify-center items-center gap-10">
                     <h2 className=" text-white text-5xl font-serif">Services We Offer</h2>
-                    <div className="w-full py-96 overflow-hidden rounded-3xl relative">
+                    <div className="w-full py-80 overflow-hidden rounded-3xl relative">
                         <Image className=" object-cover" fill src={serv1} alt="hero picture" />
                         <div className=" absolute left-0 top-0 bottom-0 bg-black bg-opacity-75 w-4/5 lg:w-1/2 flex flex-col py-20 px-10">
                             <h5 id="interiorremodels" className=" text-white text-2xl md:text-5xl pb-9 font-serif">INTERIOR REMODELS</h5>
@@ -42,7 +42,7 @@ export default function AboutUs() {
                             </ul>
                         </div>
                     </div>
-                    <div className="w-full py-96 overflow-hidden rounded-3xl relative">
+                    <div className="w-full py-80 overflow-hidden rounded-3xl relative">
                         <Image className=" object-cover" fill src={serv2} alt="hero picture" />
                         <div className=" absolute right-0 top-0 bottom-0 bg-black bg-opacity-75 w-4/5 lg:w-1/2 flex flex-col py-20 px-10">
                             <h5 id="customhomes" className=" text-white text-2xl md:text-5xl pb-9 font-serif">CUSTOM HOMES</h5>
@@ -59,7 +59,7 @@ export default function AboutUs() {
                             </ul>
                         </div>
                     </div>
-                    <div className="w-full py-96 overflow-hidden rounded-3xl relative">
+                    <div className="w-full py-80 overflow-hidden rounded-3xl relative">
                         <Image className=" object-cover" fill src={serv3} alt="hero picture" />
                         <div className=" absolute left-0 top-0 bottom-0 bg-black bg-opacity-75 w-4/5 lg:w-1/2 flex flex-col py-20 px-10">
                             <h5 id="cabinetrywoodworking" className=" text-white text-2xl md:text-5xl pb-9 font-serif">CABINETRY & WOODWORKING</h5>

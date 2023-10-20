@@ -17,8 +17,14 @@ export default function DreamFormSection() {
         'Other'
     ];
 
+    const handleSubmit = (event: any) => {
+        event.preventDefault();
+
+        console.log("submit ")
+    }
+
   return (
-    <section style={{ background: 'linear-gradient(120deg, #686810, #4C5A1C, #314B26, #173D2E)' }} className='w-full px-4 sm:px-8 md:px-16 pb-16 pt-16 flex flex-row justify-center items-center'>
+    <section onSubmit={handleSubmit} style={{ background: 'linear-gradient(120deg, #686810, #4C5A1C, #314B26, #173D2E)' }} className='w-full px-4 sm:px-8 md:px-16 pb-16 pt-16 flex flex-row justify-center items-center'>
         <div className=" max-w-[1920px] w-full flex flex-col md:flex-row justify-center gap-10">
             <div className=' w-full md:w-1/3 flex flex-col gap-5 sm:gap-10'>
                 <h4 className=' text-white text-6xl font-serif text-center md:text-start'>Pull Up a Chair & Share Your Dream With Us</h4>
