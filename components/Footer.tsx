@@ -19,7 +19,7 @@ export default function Footer() {
                     <Image src={tiktok} height={21} alt="facebook logo" />
                 </div>
             </div>
-            <div className="w-full h-full gap-10 pl-5 md:pl-20 flex flex-col justify-between pr-24">
+            <div className="w-full h-full gap-10 pl-5 md:pl-20 flex flex-col justify-between md:pr-24">
                 <div className="flex flex-col md:flex-row gap-10 justify-between">
                     <div className="flex flex-col gap-2">
                         <Link className="text-white  hover:text-gray-200 font-sans font-semibold text-lg" href={'/'}>Home</Link>

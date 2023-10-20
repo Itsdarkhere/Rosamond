@@ -11,7 +11,7 @@ import hamburger from '../public/hamburger.svg'
 
 export default function BurgerMenu() {
     return (
-      <div className='md:hidden relative'>
+      <div className='md:hidden relative flex justify-center items-center'>
         <Menu>
             <Menu.Button className='focus:outline-none focus:ring-2 focus:ring-blue-500'>
                 <Image src={hamburger} alt='hamburger menu' height={25} />
