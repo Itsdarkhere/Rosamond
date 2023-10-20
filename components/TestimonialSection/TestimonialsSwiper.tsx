@@ -14,6 +14,7 @@ export default function TestimonialsSwiper() {
         direction={'horizontal'}
         loop={false}
         navigation={false}
+        grabCursor={true}
         className=' w-full px-52'
         spaceBetween={25}
         slidesPerGroup={1}

@@ -1,5 +1,6 @@
 import Image from "next/image"
 import contactus from '../../public/contactus.png'
+import hero from '../../public/hero.jpg'
 import BuildsSection from "@/components/BuildsSection/BuildsSection"
 import StepsSection from "@/components/StepsSection/StepsSection"
 import TestimonialSection from "@/components/TestimonialSection/TestimonialSection"
@@ -9,8 +10,8 @@ export default function AboutUs() {
     return (
         <div style={{ backgroundColor: '#161616'}} className="flex relative flex-col items-center justify-between">
             <section className=" w-full pt-52 px-4 sm:px-8 md:px-16 flex flex-col justify-center items-center">
-                <div className=" max-w-[1920px] w-full py-52 lg:py-96 overflow-hidden rounded-3xl bg-gray-400 relative">
-                    <Image className="z-0 object-cover" fill src={contactus} alt="Family picture" />
+                <div className=" max-w-[1920px] w-full py-52 lg:py-96 overflow-hidden rounded-3xl relative">
+                    <Image className="z-0 object-cover" fill src={hero} alt="Family picture" />
                 </div>
                 <h2 className=" z-10 text-center relative text-4xl lg:text-9xl -mt-6 lg:-mt-20 text-white font-serif">We Build Legacies</h2>
             </section>

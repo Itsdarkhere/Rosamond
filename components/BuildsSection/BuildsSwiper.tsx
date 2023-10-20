@@ -19,6 +19,7 @@ export default function BuildsSwiper() {
         slidesPerView={1.2}
         speed={500}
         pagination={false}
+        grabCursor={true}
         breakpoints={{
           600: {
             slidesPerView: 1.2,
