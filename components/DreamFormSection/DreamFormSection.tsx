@@ -7,6 +7,7 @@ import { useState } from "react";
 
 export default function DreamFormSection() {
     const [selectedValue, setSelectedValue] = useState('Custom Home Build');
+    const [selectValue, setSelectValue] = useState('')
     const options = [
         'Custom Home Build',
         'Interior Remodel',
@@ -24,7 +25,7 @@ export default function DreamFormSection() {
                 <p className=' text-white text-xl sm:text-4xl font-sans text-center md:text-start'>At Rosamond Construction, we craft homes, cabinetry, and timeless spaces, but our true masterpiece is the enduring bond we forge with you. Share your vision, and together, let's shape dreams into reality.</p>
             </div>
             <form className='w-full  md:w-2/3 max-w-[800px] bg-white font-sans shadow-sm rounded-lg flex flex-col justify-start items-start p-2 pb-10'>
-                <h5 className=' text-3xl text-black font-semibold py-5 px-6 border-b w-full'>Begin Your Rosamond Journey</h5>
+                <h5 className=' text-4xl text-black font-semibold py-7 px-6 border-b w-full'>Begin Your Rosamond Journey</h5>
                 <div className="col-span-full w-full px-6 mt-4">
                     <label
                     htmlFor="title"
@@ -144,13 +145,14 @@ export default function DreamFormSection() {
                             id="country"
                             name="country"
                             autoComplete="country-name"
-                            defaultValue={'empty'}
-                            className="appearance-none text-gray-900 rounded-2xl ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-formfocus w-full h-full py-4 px-3 sm:text-sm sm:leading-6 border-0 outline-none"
+                            defaultValue={''}
+                            onChange={(e) => setSelectValue(e.target.value)}
+                            className={`${selectValue === '' ? 'text-gray-400' : 'text-gray-900'} appearance-none rounded-2xl ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-formfocus w-full h-full py-4 px-3 sm:text-sm sm:leading-6 border-0 outline-none`}
                         >
-                            <option value="empty" disabled>Select budget</option>
-                            <option className="">United States</option>
-                            <option className="">Canada</option>
-                            <option className="">Mexico</option>
+                            <option value="" disabled>Select budget</option>
+                            <option value='sss' className="">United States</option>
+                            <option value='s' className="">Canada</option>
+                            <option value='ss' className="">Mexico</option>
                         </select>
                         <Image className=" absolute touch-none right-5" src={chevrondown} alt="arrow down" height={9} />
                     </div>
