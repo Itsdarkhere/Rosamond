@@ -9,7 +9,7 @@ import DreamFormSection from "@/components/DreamFormSection/DreamFormSection"
 export default function AboutUs() {
     return (
         <div style={{ backgroundColor: '#161616'}} className="flex relative flex-col items-center justify-between">
-            <section className=" w-full pt-52 px-4 sm:px-8 md:px-16 flex flex-col justify-center items-center">
+            <section className=" w-full pt-32 px-4 sm:px-8 md:px-16 flex flex-col justify-center items-center">
                 <div className=" max-w-[1920px] w-full py-52 lg:py-96 overflow-hidden rounded-3xl relative">
                     <Image className="z-0 object-cover" fill src={hero} alt="Family picture" />
                 </div>
