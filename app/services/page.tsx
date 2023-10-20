@@ -12,7 +12,7 @@ export default function AboutUs() {
         <div style={{ backgroundColor: '#161616'}} className="flex relative flex-col items-center justify-between">
             <section className="w-full px-4 sm:px-8 md:px-16 h-full relative flex justify-center items-center">
                 <Image priority fill className=' z-0 brightness-50 object-cover' src={services} alt='Beautiful house' />
-                <div className=' max-w-[1920px] relative z-20 flex flex-col justify-center items-center text-center py-96 text-white'>
+                <div className=' max-w-[1920px] relative z-20 flex flex-col justify-center items-center text-center py-60 sm:py-96 text-white'>
                     <h1 className=' text-4xl sm:text-7xl font-serif'>Where Arkansas Dreams Meet Superior Craft</h1>
                     <h3 className=' mt-3 sm:mt-10 max-w-[966px] text-xl sm:text-4xl font-sans'>Your dream, our craftsmanship.</h3>
                     <button className=' mt-10 text-lg sm:text-2xl text-black py-3 px-4 rounded-full bg-white hover:bg-gray-200 flex flex-row justify-center items-center gap-3'>
