@@ -15,11 +15,11 @@ export default function Nav() {
                 <h1 className=" text-2xl font-serif">ROSAMOND CONSTRUCTION</h1>
             </Link>
             <nav className="hidden md:flex flex-row gap-7">
-                <Link className={`${pathname === '/' && 'text-gray-400'} text-white hover:text-gray-200 text-base font-sans`} href={'/'}>Home</Link>
-                <Link className={`${pathname === '/aboutus' && 'text-gray-400'} text-white hover:text-gray-200 text-base font-sans`} href={'/aboutus'}>About Us</Link>
-                <Link className={`${pathname === '/services' && 'text-gray-400'} text-white hover:text-gray-200 text-base font-sans`} href={'/services'}>Services</Link>
-                <Link className={`${pathname === '/portfolio' && 'text-gray-400'} text-white hover:text-gray-200 text-base font-sans`} href={'/portfolio'}>Portfolio</Link>
-                <Link className={`${pathname === '/contact' && 'text-gray-400'} text-white hover:text-gray-200 text-base font-sans`} href={'/contact'}>Contact</Link>
+                <Link className={`${pathname === '/' && 'text-gray-500'} text-white hover:text-gray-200 text-base font-sans`} href={'/'}>Home</Link>
+                <Link className={`${pathname === '/aboutus' && 'text-gray-500'} text-white hover:text-gray-200 text-base font-sans`} href={'/aboutus'}>About Us</Link>
+                <Link className={`${pathname === '/services' && 'text-gray-500'} text-white hover:text-gray-200 text-base font-sans`} href={'/services'}>Services</Link>
+                <Link className={`${pathname === '/portfolio' && 'text-gray-500'} text-white hover:text-gray-200 text-base font-sans`} href={'/portfolio'}>Portfolio</Link>
+                <Link className={`${pathname === '/contact' && 'text-gray-500'} text-white hover:text-gray-200 text-base font-sans`} href={'/contact'}>Contact</Link>
             </nav>
             <BurgerMenu />
         </div>
