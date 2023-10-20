@@ -49,7 +49,7 @@ export default function DreamFormSection() {
                         htmlFor="location"
                         className="block text-2xl font-medium leading-10 text-gray-900"
                     >
-                        Im located in
+                        I’m located in
                     </label>
                     <div className="mt-1">
                         <input
@@ -82,7 +82,7 @@ export default function DreamFormSection() {
                     </div>
                     </div>
                 </div>
-                <h6 className=" block text-2xl font-medium text-gray-900 mx-6 mt-9 pb-2 leading-10">Im interested in...</h6>
+                <h6 className=" block text-2xl font-medium text-gray-900 mx-6 mt-9 pb-2 leading-10">I’m interested in...</h6>
                 <div className="flex flex-row flex-wrap gap-4 mx-6">
                     {options.map((option) => (
                         <RadioButton
