@@ -20,7 +20,7 @@ export default function Home() {
           <div className=' relative z-20 flex flex-col justify-center items-center text-center py-96 px-4 sm:px-8 md:px-16 text-white'>
             <h1 className=' text-7xl font-serif'>Arkansas Diamond Standard Homes & Interiors</h1>
             <h3 className=' mt-10 max-w-[966px] text-3xl font-sans'>Where unparalleled craftsmanship meets Southern charm. Dive into a legacy of luxury - affordable, honest and uniquely yours.</h3>
-            <button className=' mt-10 text-2xl text-black py-3 px-4 gap-3 flex flex-row justify-center items-center rounded-full bg-white font-sans font-semibold'>
+            <button className=' mt-10 text-2xl text-black py-3 px-4 gap-3 flex flex-row justify-center items-center rounded-full bg-white hover:bg-gray-200 font-sans font-semibold'>
               GET STARTED
               <Image src={blackarrowright} alt='black arrow pointing right' height={18} />
             </button>
@@ -32,7 +32,7 @@ export default function Home() {
             <Image height={35} src={line} alt='line' />
             <h4 className=' text-white text-5xl mt-9 font-serif'>ROSAMOND CONSTRUCTION</h4>
             <p className=' text-white text-xl mt-9 font-sans'>From the heart of Springdale, Arkansas, Rosamond Construction upholds the essence of Southern craftsmanship and values. We're more than just builders; we're neighbors dedicated to integrity and community. We offer more than upscale, quality construction; we provide homes where families can grow, and memories are forged. From our family to yours, we promise affordability without compromising on luxury. At Rosamond Construction, your dream home isn't just a project—it's a commitment, a legacy. Let's craft homes filled with heart and soul, together.</p>
-            <button className=' mt-10 border-2 border-white text-xl text-white py-3 px-4 gap-3 flex flex-row justify-center items-center rounded-full bg-transparent font-sans font-semibold'>
+            <button className=' mt-10 border-2 border-white text-xl text-white py-3 px-4 gap-3 flex flex-row justify-center items-center rounded-full bg-transparent hover:bg-black font-sans font-semibold'>
               LEARN MORE
               <Image src={arrowright} alt='arrow pointing right' height={18} />
             </button>
@@ -42,8 +42,8 @@ export default function Home() {
         <div className=" max-w-[1920px] w-full flex pt-6 pb-10 flex-col justify-center items-center gap-10">
           <h3 className=' text-5xl text-white font-serif text-center'>Where Arkansas Dreams Meet Superior Craft</h3>
           <div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10'>
-            <Link className=' w-full rounded-3xl overflow-hidden aspect-[11/12] flex flex-col relative' href={'/services/#customhomes'}>
-              <Image className=' object-cover brightness-75' src={ch} fill alt='interior of a house' />
+            <Link className=' w-full rounded-3xl overflow-hidden aspect-[11/12] flex flex-col relative group' href={'/services/#customhomes'}>
+              <Image className=' object-cover brightness-75 group-hover:scale-105 transition-transform' src={ch} fill alt='interior of a house' />
               <div className=' absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center text-center'>
                 <div className=' h-16 w-16 rounded-full bg-black mb-14 flex justify-center items-center'>
                   <Image height={20} src={arrowright} alt='arrow right' />
@@ -51,8 +51,8 @@ export default function Home() {
                 <h5 className='max-w-250px text-3xl text-white font-sans font-semibold'>CUSTOM HOMES</h5>
               </div>
             </Link>
-            <Link className=' w-full rounded-3xl overflow-hidden aspect-[11/12]  flex flex-col relative' href={'/services/#interiorremodels'}>
-              <Image className=' object-cover brightness-50' src={ir} fill alt='interior of a house' />
+            <Link className=' w-full rounded-3xl overflow-hidden aspect-[11/12]  flex flex-col relative group' href={'/services/#interiorremodels'}>
+              <Image className=' object-cover brightness-50 group-hover:scale-105 transition-transform' src={ir} fill alt='interior of a house' />
               <div className=' absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center text-center'>
                 <div className=' h-16 w-16 rounded-full bg-black mb-14 flex justify-center items-center'>
                   <Image height={20} src={arrowright} alt='arrow right' />
@@ -60,8 +60,8 @@ export default function Home() {
                 <h5 className='max-w-250px text-3xl text-white font-sans font-semibold'>INTERIOR REMODELS</h5>
               </div>
             </Link>
-            <Link className=' w-full rounded-3xl overflow-hidden aspect-[11/12] flex flex-col relative' href={'/services/#cabinetrywoodworking'}>
-              <Image className=' object-cover brightness-50' src={cw} fill alt='interior of a house' />
+            <Link className=' w-full rounded-3xl overflow-hidden aspect-[11/12] flex flex-col relative group' href={'/services/#cabinetrywoodworking'}>
+              <Image className=' object-cover brightness-50 group-hover:scale-105 transition-transform' src={cw} fill alt='interior of a house' />
               <div className=' absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center text-center'>
                 <div className=' h-16 w-16 rounded-full bg-black flex justify-center items-center'>
                   <Image height={20} src={arrowright} alt='arrow right' />

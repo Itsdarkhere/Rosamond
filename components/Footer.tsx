@@ -22,19 +22,19 @@ export default function Footer() {
             <div className="w-full h-full gap-10 pl-5 md:pl-20 flex flex-col justify-between pr-24">
                 <div className="flex flex-col md:flex-row gap-10 justify-between">
                     <div className="flex flex-col gap-2">
-                        <Link className=" font-sans font-semibold text-lg" href={'/'}>Home</Link>
-                        <Link className=" font-sans font-semibold text-lg" href={'/aboutus'}>About Us</Link>
-                        <Link className=" font-sans font-semibold text-lg" href={'/portfolio'}>Portfolio</Link>
+                        <Link className="text-white  hover:text-gray-200 font-sans font-semibold text-lg" href={'/'}>Home</Link>
+                        <Link className="text-white  hover:text-gray-200 font-sans font-semibold text-lg" href={'/aboutus'}>About Us</Link>
+                        <Link className="text-white  hover:text-gray-200 font-sans font-semibold text-lg" href={'/portfolio'}>Portfolio</Link>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <Link className=" font-sans font-semibold text-lg" href={'/services'}>Services</Link>
-                        <Link className=" font-sans text-sm" href={'/services'}>Custom Home Builds</Link>
-                        <Link className=" font-sans text-sm" href={'/services'}>Cabinetry</Link>
-                        <Link className=" font-sans text-sm" href={'/services'}>Woodworking</Link>
+                        <Link className="text-white  hover:text-gray-200 font-sans font-semibold text-lg" href={'/services'}>Services</Link>
+                        <Link className="text-white  hover:text-gray-200 font-sans text-sm" href={'/services'}>Custom Home Builds</Link>
+                        <Link className="text-white  hover:text-gray-200 font-sans text-sm" href={'/services'}>Cabinetry</Link>
+                        <Link className="text-white  hover:text-gray-200 font-sans text-sm" href={'/services'}>Woodworking</Link>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <Link className=" font-sans font-semibold text-lg" href={'/contact'}>Customer Care</Link>
-                        <Link className=" font-sans text-sm" href={'/aboutus'}>Contact Us</Link>
+                        <Link className="text-white hover:text-gray-200 font-sans font-semibold text-lg" href={'/contact'}>Customer Care</Link>
+                        <Link className="text-white hover:text-gray-200 font-sans text-sm" href={'/aboutus'}>Contact Us</Link>
                     </div>
                 </div>
                 <p className=" text-white text-sm">© 2023. Rosamond Construction</p>
