@@ -39,7 +39,7 @@ export default function DreamFormSection() {
                         id="Name Lastname"
                         required
                         autoComplete="username"
-                        className="block w-full border-0 border-b-2 outline-none px-3.5 py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
+                        className="block w-full border-0 border-b-2 outline-none py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
                         placeholder="Name Lastname"
                     />
                 </div>
@@ -58,7 +58,7 @@ export default function DreamFormSection() {
                         id="location"
                         autoComplete="given-name"
                         placeholder="City, State"
-                        className="block w-full border-0 border-b-2 outline-none px-3.5 py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
+                        className="block w-full border-0 border-b-2 outline-none py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
                         />
                     </div>
                     </div>
@@ -77,7 +77,7 @@ export default function DreamFormSection() {
                         id="startdate"
                         placeholder="01/03/2024"
                         autoComplete="family-name"
-                        className="block w-full border-0 border-b-2 outline-none px-3.5 py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
+                        className="block w-full border-0 border-b-2 outline-none py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
                         />
                     </div>
                     </div>
@@ -109,7 +109,7 @@ export default function DreamFormSection() {
                             id="number"
                             placeholder="+1 (407) 123-3211"
                             autoComplete="given-name"
-                            className="block w-full border-0 border-b-2 outline-none px-3.5 py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
+                            className="block w-full border-0 border-b-2 outline-none py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
                             />
                         </div>
                     </div>
@@ -128,7 +128,7 @@ export default function DreamFormSection() {
                         id="email"
                         placeholder="Email"
                         autoComplete="family-name"
-                        className="block w-full border-0 border-b-2 outline-none px-3.5 py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
+                        className="block w-full border-0 border-b-2 outline-none py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
                         />
                     </div>
                     </div>
