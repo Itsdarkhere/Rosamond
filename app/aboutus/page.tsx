@@ -13,7 +13,7 @@ export default function AboutUs() {
                 <div className=" max-w-[1920px] w-full py-52 lg:py-96 overflow-hidden rounded-3xl relative">
                     <Image className="z-0 object-cover" fill src={hero} alt="Family picture" />
                 </div>
-                <h2 className=" z-10 text-center relative text-4xl lg:text-9xl -mt-6 lg:-mt-20 text-white font-serif">We Build Legacies</h2>
+                <h2 className=" z-10 text-center relative text-5xl lg:text-9xl -mt-6 lg:-mt-20 text-white font-serif">We Build Legacies</h2>
             </section>
             <section className=" py-48 flex flex-col text-center">
                 <div className=" max-w-[1920px] w-full px-4 sm:px-8 md:px-16 flex-col justify-center items-center">
