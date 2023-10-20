@@ -17,6 +17,9 @@ const config: Config = {
         sans: ['var(--font-sans)'],
         serif: ['var(--font-serif)'],
       },
+      colors: {
+        formfocus: '#81864A'
+      }
     },
   },
   plugins: [],

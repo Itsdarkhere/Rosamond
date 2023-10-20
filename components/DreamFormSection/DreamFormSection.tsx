@@ -22,7 +22,7 @@ export default function DreamFormSection() {
                         id="Name Lastname"
                         required
                         autoComplete="username"
-                        className="block w-full text-xl border-0 border-b-2 bg-transparent py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                        className="block w-full border-0 border-b-2 outline-none px-3.5 py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
                         placeholder="Name Lastname"
                     />
                 </div>
@@ -41,7 +41,7 @@ export default function DreamFormSection() {
                         id="location"
                         autoComplete="given-name"
                         placeholder="City, State"
-                        className="block w-full text-xl border-0 border-b-2 bg-transparent py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                        className="block w-full border-0 border-b-2 outline-none px-3.5 py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
                         />
                     </div>
                     </div>
@@ -60,7 +60,7 @@ export default function DreamFormSection() {
                         id="startdate"
                         placeholder="01/03/2024"
                         autoComplete="family-name"
-                        className="block w-full text-xl border-0 border-b-2 bg-transparent py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                        className="block w-full border-0 border-b-2 outline-none px-3.5 py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
                         />
                     </div>
                     </div>
@@ -77,22 +77,22 @@ export default function DreamFormSection() {
                 </div>
                 <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 w-full px-6 mt-9">
                     <div className="sm:col-span-3">
-                    <label
-                        htmlFor="number"
-                        className="block leading-10	text-2xl font-medium text-gray-900"
-                    >
-                        My best number is
-                    </label>
-                    <div className="mt-1">
-                        <input
-                        type="text"
-                        name="number"
-                        id="number"
-                        placeholder="+1 (407) 123-3211"
-                        autoComplete="given-name"
-                        className="block w-full text-xl border-0 border-b-2 bg-transparent py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
-                        />
-                    </div>
+                        <label
+                            htmlFor="number"
+                            className="block leading-10	text-2xl font-medium text-gray-900"
+                        >
+                            My best number is
+                        </label>
+                        <div className="mt-1">
+                            <input
+                            type="text"
+                            name="number"
+                            id="number"
+                            placeholder="+1 (407) 123-3211"
+                            autoComplete="given-name"
+                            className="block w-full border-0 border-b-2 outline-none px-3.5 py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
+                            />
+                        </div>
                     </div>
 
                     <div className="sm:col-span-3">
@@ -109,7 +109,7 @@ export default function DreamFormSection() {
                         id="email"
                         placeholder="Email"
                         autoComplete="family-name"
-                        className="block w-full text-xl border-0 border-b-2 bg-transparent py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                        className="block w-full border-0 border-b-2 outline-none px-3.5 py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
                         />
                     </div>
                     </div>
@@ -126,7 +126,7 @@ export default function DreamFormSection() {
                         id="country"
                         name="country"
                         autoComplete="country-name"
-                        className="block max-w-[450px] w-full rounded-md border-0 py-4 px-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        className="block max-w-[450px] w-full rounded-md border-0 py-4 px-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-formfocus sm:text-sm sm:leading-6"
                     >
                         <option>United States</option>
                         <option>Canada</option>
@@ -146,7 +146,7 @@ export default function DreamFormSection() {
                         id="about"
                         name="about"
                         rows={3}
-                        className="block w-full px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        className="block w-full h-40 px-2 rounded-md outline-none border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-formfocus sm:text-sm sm:leading-6"
                     />
                     </div>
                 </div>
