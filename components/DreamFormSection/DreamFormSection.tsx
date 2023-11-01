@@ -78,57 +78,6 @@ export default function DreamFormSection() {
                     </div>
                     <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 w-full px-6 mt-9">
                         <div className="sm:col-span-3">
-                        <label
-                            htmlFor="location"
-                            className="block text-2xl font-medium leading-10 text-gray-900"
-                        >
-                            I’m located in
-                        </label>
-                        <div className="mt-1">
-                            <input
-                            type="text"
-                            name="location"
-                            id="location"
-                            autoComplete="given-name"
-                            placeholder="City, State"
-                            className="block w-full border-0 border-b-2 outline-none py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
-                            />
-                        </div>
-                        </div>
-
-                        <div className="sm:col-span-3">
-                        <label
-                            htmlFor="startdate"
-                            className="block text-2xl font-medium leading-10 text-gray-900"
-                        >
-                            My preferred start date is
-                        </label>
-                        <div className="mt-1">
-                            <input
-                            type="text"
-                            name="last-name"
-                            id="startdate"
-                            placeholder="01/03/2024"
-                            autoComplete="family-name"
-                            className="block w-full border-0 border-b-2 outline-none py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
-                            />
-                        </div>
-                        </div>
-                    </div>
-                    <h6 className=" block text-2xl font-medium text-gray-900 mx-6 mt-9 pb-2 leading-10">I’m interested in...</h6>
-                    <div className="flex flex-row flex-wrap gap-4 mx-6">
-                        {options.map((option) => (
-                            <RadioButton
-                                key={option}
-                                label={option}
-                                value={option}
-                                selectedValue={selectedValue}
-                                setSelectedValue={setSelectedValue}
-                            />
-                        ))}
-                    </div>
-                    <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 w-full px-6 mt-9">
-                        <div className="sm:col-span-3">
                             <label
                                 htmlFor="number"
                                 className="block leading-10	text-2xl font-medium text-gray-900"
@@ -166,29 +115,17 @@ export default function DreamFormSection() {
                         </div>
                         </div>
                     </div>
-                    <div className="sm:col-span-3 w-full px-6 mt-9">
-                        <label
-                        htmlFor="country"
-                        className="block text-2xl font-medium leading-10 text-gray-900"
-                        >
-                        My estimated budget is
-                        </label>
-                        <div className="mt-2 max-w-[450px] relative flex flex-row justify-center items-center w-full">
-                            <select
-                                id="country"
-                                name="country"
-                                autoComplete="country-name"
-                                defaultValue={''}
-                                onChange={(e) => setSelectValue(e.target.value)}
-                                className={`${selectValue === '' ? 'text-gray-400' : 'text-gray-900'} appearance-none rounded-2xl ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-formfocus w-full h-full py-4 px-3 sm:text-sm sm:leading-6 border-0 outline-none`}
-                            >
-                                <option value="" disabled>Select budget</option>
-                                <option value='sss' className="">United States</option>
-                                <option value='s' className="">Canada</option>
-                                <option value='ss' className="">Mexico</option>
-                            </select>
-                            <Image className=" absolute touch-none right-5" src={chevrondown} alt="arrow down" height={9} />
-                        </div>
+                    <h6 className=" block text-2xl font-medium text-gray-900 mx-6 mt-9 pb-2 leading-10">I’m interested in...</h6>
+                    <div className="flex flex-row flex-wrap gap-4 mx-6">
+                        {options.map((option) => (
+                            <RadioButton
+                                key={option}
+                                label={option}
+                                value={option}
+                                selectedValue={selectedValue}
+                                setSelectedValue={setSelectedValue}
+                            />
+                        ))}
                     </div>
                     <div className="col-span-full w-full px-6 mt-9">
                         <label
