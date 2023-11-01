@@ -1,6 +1,7 @@
 'use client'
 import Image from "next/image"
 import phone from '../../public/phone.svg'
+import downicon from '../../public/downicon.svg'
 import mail from '../../public/mail.svg'
 import contact from '../../public/contact.png'
 import arrowright from '../../public/arrowright.svg'
@@ -12,6 +13,7 @@ import { useState } from "react"
 
 export default function Contact() {
     const [submitted, setSubmitted] = useState(false);
+    const [selectValue, setSelectValue] = useState('');
 
     const handleSubmit = (event: any) => {
         event.preventDefault();
@@ -70,16 +72,27 @@ export default function Contact() {
                                         placeholder="Phone Number"
                                     />
                                 </div>
-                                <div className="w-full flex mb-4 rounded-lg shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-formfocus">
-                                    <input
-                                        type="text"
-                                        name="username"
-                                        id=""
+                                <div className="flex flex-row justify-center items-center relative mb-4 ">
+                                    <select
+                                        id="country"
+                                        name="country"
                                         required
-                                        autoComplete="username"
-                                        className="block w-full outline-none border-0 px-2 bg-transparent py-2.5 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
-                                        placeholder="How did you find us?"
-                                    />
+                                        autoComplete="country-name"
+                                        defaultValue={''}
+                                        onChange={(e) => setSelectValue(e.target.value)}
+                                        className={`${selectValue === '' ? 'text-gray-400' : 'text-gray-900'} appearance-none rounded-lg ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-formfocus w-full h-full py-2.5 px-3 sm:text-sm sm:leading-6 border-0 outline-none`}
+                                    >
+                                        <option value="" disabled>How did you find us?</option>
+                                        <option value='sss' className="">Referral</option>
+                                        <option value='s' className="">Internet Search</option>
+                                        <option value='ss' className="">Social Media</option>
+                                        <option value='ss' className="">Advertising</option>
+                                        <option value='ss' className="">Website</option>
+                                        <option value='ss' className="">Review Sites</option>
+                                        <option value='ss' className="">Word of Mouth</option>
+                                        <option value='ss' className="">Other</option>
+                                    </select>
+                                    <Image className=" absolute touch-none right-5" src={downicon} alt="arrow down" height={10} />
                                 </div>
                             </div>
                             <button disabled={submitted} type="submit" className=" rounded-full flex flex-row justify-center items-center gap-2 bg-black disabled:bg-gray-300 w-full py-3 font-sans">
