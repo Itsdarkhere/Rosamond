@@ -6,6 +6,7 @@ import serv3 from '../../public/serv3.avif'
 import blackarrowright from '../../public/blackarrowright.svg'
 import DreamFormSection from "@/components/DreamFormSection/DreamFormSection"
 import WhySection from "@/components/WhySection/WhySection"
+import Link from "next/link"
 
 export default function AboutUs() {
     return (
@@ -15,10 +16,10 @@ export default function AboutUs() {
                 <div className=' max-w-[1920px] relative z-20 flex flex-col justify-center items-center text-center py-60 sm:py-80 text-white'>
                     <h1 className=' text-4xl sm:text-7xl font-serif'>Where Arkansas Dreams Meet Superior Craft</h1>
                     <h3 className=' mt-3 sm:mt-10 max-w-[966px] text-xl sm:text-4xl font-sans'>Your dream, our craftsmanship.</h3>
-                    <button className=' mt-10 text-lg sm:text-2xl text-black py-3 px-4 rounded-full bg-white hover:bg-gray-200 flex flex-row justify-center items-center gap-3'>
+                    <Link href={'#dreamform'} className=' mt-10 text-lg sm:text-2xl text-black py-3 px-4 rounded-full bg-white hover:bg-gray-200 flex flex-row justify-center items-center gap-3'>
                         SHARE YOUR VISION
                         <Image src={blackarrowright} alt="arrow right" height={16} />
-                    </button>
+                    </Link>
                 </div>
             </section>  
             <WhySection />
@@ -76,10 +77,10 @@ export default function AboutUs() {
                             </ul>
                         </div>
                     </div>
-                    <button className=" py-4 px-8 rounded-full text-black font-semibold bg-white hover:bg-gray-200 font-sans flex flex-row justify-center items-center gap-3">
+                    <Link href={'/portfolio'} className=" py-4 px-8 rounded-full text-black font-semibold bg-white hover:bg-gray-200 font-sans flex flex-row justify-center items-center gap-3">
                         EXPLORE OUR PORTFOLIO
                         <Image src={blackarrowright} alt="arrow right" height={16} />
-                    </button>
+                    </Link>
                 </div>
             </section>
             <DreamFormSection />

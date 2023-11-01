@@ -20,10 +20,10 @@ export default function Home() {
           <div className=' relative z-20 flex flex-col justify-center items-center text-center py-60 sm:py-80 px-4 sm:px-8 md:px-16 text-white'>
             <h1 className=' text-5xl sm:text-7xl font-serif'>Arkansas Diamond Standard Homes & Interiors</h1>
             <h3 className=' mt-3  sm:mt-10 max-w-[966px] text-lg sm:text-3xl font-sans'>Where unparalleled craftsmanship meets Southern charm. Dive into a legacy of luxury - affordable, honest and uniquely yours.</h3>
-            <button className=' mt-10 text-base sm:text-2xl text-black py-3 px-4 gap-3 flex flex-row justify-center items-center rounded-full bg-white hover:bg-gray-200 font-sans font-semibold'>
+            <Link href='/#dreamform' scroll={true} className=' mt-10 text-base sm:text-2xl text-black py-3 px-4 gap-3 flex flex-row justify-center items-center rounded-full bg-white hover:bg-gray-200 font-sans font-semibold'>
               GET STARTED
               <Image src={blackarrowright} alt='black arrow pointing right' height={18} />
-            </button>
+            </Link>
           </div>
        </section>
        <section className=' py-28 px-4 sm:px-8 md:px-16 flex flex-col justify-center items-center'>
@@ -32,10 +32,10 @@ export default function Home() {
             <Image height={35} src={line} alt='line' />
             <h4 className=' text-white text-3xl sm:text-5xl mt-9 font-serif'>ROSAMOND CONSTRUCTION</h4>
             <p className=' text-white text-base sm:text-xl mt-9 font-sans'>From the heart of Springdale, Arkansas, Rosamond Construction upholds the essence of Southern craftsmanship and values. We're more than just builders; we're neighbors dedicated to integrity and community. We offer more than upscale, quality construction; we provide homes where families can grow, and memories are forged. From our family to yours, we promise affordability without compromising on luxury. At Rosamond Construction, your dream home isn't just a project—it's a commitment, a legacy. Let's craft homes filled with heart and soul, together.</p>
-            <button className=' mt-10 border-2 border-white text-base sm:text-xl text-white py-3 px-4 gap-3 flex flex-row justify-center items-center rounded-full bg-transparent hover:bg-black font-sans font-semibold'>
+            <Link href={'/aboutus'} className=' mt-10 border-2 border-white text-base sm:text-xl text-white py-3 px-4 gap-3 flex flex-row justify-center items-center rounded-full bg-transparent hover:bg-black font-sans font-semibold'>
               LEARN MORE
               <Image src={arrowright} alt='arrow pointing right' height={18} />
-            </button>
+            </Link>
           </div>
        </section>
        <section className=' flex px-4 sm:px-8 md:px-16  flex-col w-full justify-center items-center'>
