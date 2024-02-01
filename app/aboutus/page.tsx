@@ -1,6 +1,5 @@
 import Image from "next/image"
-import contactus from '../../public/contactus.png'
-import hero from '../../public/hero.jpg'
+import hero from '../../public/about1.png'
 import BuildsSection from "@/components/BuildsSection/BuildsSection"
 import StepsSection from "@/components/StepsSection/StepsSection"
 import TestimonialSection from "@/components/TestimonialSection/TestimonialSection"

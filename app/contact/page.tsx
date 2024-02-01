@@ -112,7 +112,7 @@ export default function Contact() {
                                     <Image src={mail} alt="email" height={23} />
                                     <div className="flex flex-col text-xs">
                                         <h6 className=" font-sans font-semibold">EMAIL</h6>
-                                        <p className=" font-sans">CONTACT@ROSAMONDCONSTRUCTION.COM</p>
+                                        <p className=" font-sans">todd@rosamondconstruction.com</p>
                                     </div>
                                 </div>
                             </div>
