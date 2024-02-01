@@ -12,10 +12,10 @@ export default function Footer() {
                 <div className="pb-20 px-20 flex flex-col justify-center items-center">
                     <Image height={130} src={logo} alt="logo" />
                     <div className="flex flex-row justify-center items-center gap-3 mt-5">
-                        <Link href={""} className=" bg-zinc-200 rounded-full p-2">
+                        <Link href={"https://twitter.com/rosamondhomes"} target="_blank" className=" bg-zinc-200 rounded-full p-2">
                             <Image src={twitter} height={15} alt="twitter logo" />
                         </Link>
-                        <Link href={""} className=" bg-zinc-200 rounded-full p-2">
+                        <Link href={"https://www.instagram.com/rosamondconstruction"} target="_blank" className=" bg-zinc-200 rounded-full p-2">
                             <Image src={instagram} height={15} alt="instagram logo" />
                         </Link>
                     </div>
