@@ -86,9 +86,7 @@ export default function DreamFormSection() {
                             </label>
                             <div className="mt-1">
                                 <input
-                                type="text"
-                                name="number"
-                                id="number"
+                                type="tel" id="phone" name="phone"
                                 placeholder="+1 (407) 123-3211"
                                 autoComplete="given-name"
                                 className="block w-full border-0 border-b-2 outline-none py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
@@ -105,9 +103,7 @@ export default function DreamFormSection() {
                         </label>
                         <div className="mt-1">
                             <input
-                            type="text"
-                            name="last-name"
-                            id="email"
+                            type="email" id="email" name="email"
                             placeholder="Email"
                             autoComplete="family-name"
                             className="block w-full border-0 border-b-2 outline-none py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
