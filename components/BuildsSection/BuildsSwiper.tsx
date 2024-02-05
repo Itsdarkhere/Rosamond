@@ -42,13 +42,6 @@ export default function BuildsSwiper() {
               <p className=' text-lg sm:text-3xl'>Completed in 2022 | Little Rock, Arkansas</p>
             </div>
         </SwiperSlide>
-        <SwiperSlide className='w-full h-full relative rounded-3xl overflow-hidden'>
-            <Image className=' object-cover brightness-50' fill src={build} alt='Picture of a house' />
-            <div className='w-full h-full text-center pb-14 pt-48 px-5 xl:pt-72 relative font-sans flex flex-col justify-end items-center'>
-              <h6 className=' text-2xl sm:text-4xl font-semibold pb-2 sm:pb-4'>Custom Family Home</h6>
-              <p className=' text-lg sm:text-3xl'>Completed in 2022 | Little Rock, Arkansas</p>
-            </div>
-        </SwiperSlide>
     </Swiper>
   )
 }

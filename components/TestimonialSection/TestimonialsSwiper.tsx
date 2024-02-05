@@ -21,6 +21,8 @@ export default function TestimonialsSwiper() {
         slidesPerView={1.2}
         speed={500}
         pagination={false}
+        centerInsufficientSlides={true}
+        // centeredSlides={true}
         breakpoints={{
             600: {
                 slidesPerView: 1.2,
@@ -28,30 +30,12 @@ export default function TestimonialsSwiper() {
                 spaceBetween: 50
             },
             1000: {
-                slidesPerView: 2.2,
+                slidesPerView: 2,
                 slidesPerGroup: 2,
                 spaceBetween: 50
             },
         }}
         >
-        <SwiperSlide className='w-full h-full'>
-            <Testimonial 
-            text='Rosamond Construction transformed our vision into reality. Their meticulous attention to detail and Southern craftsmanship gave our home an elegance we never thought possible. Every day feels like luxury living.' 
-            from='The Harrison Family' location='Fayetteville, AR' starCount={5}  />
-        </SwiperSlide>
-        <SwiperSlide className='w-full h-full'>
-            <Testimonial text='Building a custom home can be overwhelming, but with Rosamond Construction, it felt effortless. Their expertise and genuine care made our home-building journey unforgettable.' 
-            from='Carlos & Maria Gutierrez' location='Hot Springs, AR' starCount={5}  />
-        </SwiperSlide>
-        <SwiperSlide className='w-full h-full'>
-            <Testimonial 
-            text='Rosamond Construction transformed our vision into reality. Their meticulous attention to detail and Southern craftsmanship gave our home an elegance we never thought possible. Every day feels like luxury living.' 
-            from='The Harrison Family' location='Fayetteville, AR' starCount={5}  />
-        </SwiperSlide>
-        <SwiperSlide className='w-full h-full'>
-            <Testimonial text='Building a custom home can be overwhelming, but with Rosamond Construction, it felt effortless. Their expertise and genuine care made our home-building journey unforgettable.' 
-            from='Carlos & Maria Gutierrez' location='Hot Springs, AR' starCount={5}  />
-        </SwiperSlide>
         <SwiperSlide className='w-full h-full'>
             <Testimonial 
             text='Rosamond Construction transformed our vision into reality. Their meticulous attention to detail and Southern craftsmanship gave our home an elegance we never thought possible. Every day feels like luxury living.' 

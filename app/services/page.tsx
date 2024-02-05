@@ -16,7 +16,7 @@ export default function AboutUs() {
                 <div className=' max-w-[1920px] relative z-20 flex flex-col justify-center items-center text-center py-60 sm:py-80 text-white'>
                     <h1 className=' text-4xl sm:text-7xl font-serif'>Where Arkansas Dreams Meet Superior Craft</h1>
                     <h3 className=' mt-3 sm:mt-10 max-w-[966px] text-xl sm:text-4xl font-sans'>Your dream, our craftsmanship.</h3>
-                    <Link href={'#dreamform'} className=' mt-10 text-lg sm:text-2xl text-black py-3 px-4 rounded-full bg-white hover:bg-gray-200 flex flex-row justify-center items-center gap-3'>
+                    <Link href={'#dreamform'} className=' mt-10 font-sans font-semibold text-lg sm:text-2xl text-black py-5 px-4 rounded-full bg-white hover:bg-gray-200 flex flex-row justify-center items-center gap-3'>
                         SHARE YOUR VISION
                         <Image src={blackarrowright} alt="arrow right" height={16} />
                     </Link>
