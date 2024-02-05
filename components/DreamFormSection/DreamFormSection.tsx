@@ -2,7 +2,6 @@
 import Image from "next/image";
 import submit from '../../public/submit.svg';
 import { Dispatch, SetStateAction } from "react"
-import chevrondown from '../../public/chevrondown.svg'
 import check from '../../public/check.svg'
 import { useState } from "react";
 
@@ -19,9 +18,23 @@ export default function DreamFormSection() {
         'Other'
     ];
 
-    const handleSubmit = (event: any) => {
+    const handleSubmit = async (event: any) => {
         event.preventDefault();
+        const res = await fetch('/api/dream', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name: event.target.name.value,
+                phone: event.target.phone.value,
+                email: event.target.email.value,
+                project: selectedValue,
+                message: event.target.about.value
+            })
+        })
 
+        console.log(res);
         setFormSent(true);
     }
 
@@ -68,10 +81,10 @@ export default function DreamFormSection() {
                         </label>
                         <input
                             type="text"
-                            name="username"
+                            name="name"
                             id="Name Lastname"
                             required
-                            autoComplete="username"
+                            autoComplete="name"
                             className="block w-full border-0 border-b-2 outline-none py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
                             placeholder="Name Lastname"
                         />
@@ -87,8 +100,9 @@ export default function DreamFormSection() {
                             <div className="mt-1">
                                 <input
                                 type="tel" id="phone" name="phone"
+                                required
                                 placeholder="+1 (407) 123-3211"
-                                autoComplete="given-name"
+                                autoComplete="tel"
                                 className="block w-full border-0 border-b-2 outline-none py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
                                 />
                             </div>
@@ -104,8 +118,9 @@ export default function DreamFormSection() {
                         <div className="mt-1">
                             <input
                                 type="email" id="email" name="email"
+                                required
                                 placeholder="Email"
-                                autoComplete="family-name"
+                                autoComplete="email"
                                 className="block w-full border-0 border-b-2 outline-none py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
                             />
                         </div>

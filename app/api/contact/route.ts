@@ -3,16 +3,16 @@ const sgMail = require('@sendgrid/mail')
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
 export async function POST(req: Request) {
-    const { name, email, message } = await req.json()
+    const { name, email, phone, message } = await req.json()
 
-    if (!name || !email || !message) {
+    if (!name || !email || !phone || !message) {
         return NextResponse.json({ error: 'Fields not filled in the form...' }, { status: 400 })
     }
 
     const msg = {
-        to: 'valtteri.juvone@hotmail.com',
+        to: 'todd@rosamondconstruction.com',
         from: 'support@vjxsoft.com', 
-        subject: `Asiakas: ${name} Email: ${email}`,
+        subject: `Customer: ${name} Email: ${email} Phone: ${phone}`,
         text: message,
     }
 

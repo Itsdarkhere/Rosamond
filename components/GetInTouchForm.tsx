@@ -11,10 +11,23 @@ export default function GetInTouchForm() {
     const [submitted, setSubmitted] = useState(false);
     const [selectValue, setSelectValue] = useState('');
 
-    const handleSubmit = (event: any) => {
+    const handleSubmit = async (event: any) => {
         event.preventDefault();
 
-        console.log("Submit");
+        const res = await fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name: event.target.name.value,
+                email: event.target.email.value,
+                phone: event.target.phone.value,
+                message: event.target.howdidyoufindus.value
+            })
+        })
+
+        console.log(res);
         setSubmitted(true);
     }
 
@@ -22,22 +35,22 @@ export default function GetInTouchForm() {
         <form onSubmit={handleSubmit} className=" flex flex-col justify-start items-center w-full lg:w-1/2 py-20 px-5 md:px-20 lg:px-28">
             <div className="flex flex-col w-full max-w-[475px]">
                 { submitted ? 
-                <div className="flex flex-col">
-                    <h5 className=" text-5xl text-black font-serif pb-5">Thank you!</h5>
-                    <p className=" text-sm text-black font-sans pb-7">We will reach out within 24 to 48 hours. To connect with us sooner, call us or email us directly to the contact information listed below.</p>
-                </div>
-                :
-                <div className="flex flex-col">
-                    <h5 className=" text-5xl text-black font-serif pb-5">Get in Touch</h5>
-                    <p className=" text-sm text-black font-sans pb-7">Whether you're an existing customer with inquiries or someone new with a dream project in mind, we're here to listen, assist, and guide. Get in touch with Rosamond Construction today.</p>
-                </div>
+                    <div className="flex flex-col">
+                        <h5 className=" text-5xl text-black font-serif pb-5">Thank you!</h5>
+                        <p className=" text-sm text-black font-sans pb-7">We will reach out within 24 to 48 hours. To connect with us sooner, call us or email us directly to the contact information listed below.</p>
+                    </div>
+                    :
+                    <div className="flex flex-col">
+                        <h5 className=" text-5xl text-black font-serif pb-5">Get in Touch</h5>
+                        <p className=" text-sm text-black font-sans pb-7">Whether you're an existing customer with inquiries or someone new with a dream project in mind, we're here to listen, assist, and guide. Get in touch with Rosamond Construction today.</p>
+                    </div>
                 }
                 <div className={`${submitted && 'hidden'} w-full flex flex-col`}>
                     <div className="flex mb-4 rounded-lg shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-formfocus">
                         <input
                             type="text"
-                            name="full name"
-                            id="fullname"
+                            name="name"
+                            id="name"
                             required
                             autoComplete="name"
                             className="block w-full outline-none border-0 px-2 bg-transparent py-2.5 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
