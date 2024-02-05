@@ -103,10 +103,10 @@ export default function DreamFormSection() {
                         </label>
                         <div className="mt-1">
                             <input
-                            type="email" id="email" name="email"
-                            placeholder="Email"
-                            autoComplete="family-name"
-                            className="block w-full border-0 border-b-2 outline-none py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
+                                type="email" id="email" name="email"
+                                placeholder="Email"
+                                autoComplete="family-name"
+                                className="block w-full border-0 border-b-2 outline-none py-2 text-gray-900 placeholder:text-gray-400 focus:border-b-formfocus sm:text-sm sm:leading-6"
                             />
                         </div>
                         </div>
