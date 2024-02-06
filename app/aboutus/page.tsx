@@ -14,8 +14,8 @@ export default function AboutUs() {
                 </div>
                 <h2 className=" z-10 text-center relative text-5xl lg:text-9xl -mt-6 lg:-mt-20 text-white font-serif">We Build Legacies</h2>
             </section>
-            <section className=" py-48 flex flex-col text-center">
-                <div className=" max-w-[1920px] w-full px-4 sm:px-8 md:px-16 flex-col justify-center items-center">
+            <section className=" py-48 px-4 sm:px-8 md:px-16 flex flex-col text-center">
+                <div className=" max-w-[800px] w-full flex-col justify-center items-center">
                     <h3 className=" text-white text-3xl sm:text-5xl pb-9 font-serif">YOUR HOME, OUR HEARTBEAT</h3>
                     <p className=" text-white text-lg sm:text-[22px] sm:leading-7 font-sans">
                         Rosamond Construction was founded in 2018 in Springdale, Arkansas. Led by Savannah and Todd Rosamond, Rosamond Construction champions the Rosamond family's storied legacy of custom construction, cabinetry and woodwork in Arkansas and the Southern USA. As genuine Arkansans, we are deeply rooted in this land and its traditions. We're not a faceless corporation; we're a family, and we cherish the personal touch and understanding that only a local, family-owned business can bring. This rich heritage, combined with our modern sensibilities, has enabled us to reinvent Southern craftsmanship for today's homes.

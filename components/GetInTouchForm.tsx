@@ -100,7 +100,7 @@ export default function GetInTouchForm() {
                     SUBMIT
                     <Image src={arrowright} alt="arrow right" height={15} />
                 </button>
-                <Link style={{color: '#828282'}} className="font-sans mt-3 leading-5 text-sm underline w-full text-center" href={'/submit'}>Want to submit a construction idea?</Link>
+                <Link style={{color: '#828282'}} className="font-sans mt-3 leading-5 text-sm underline w-full text-center" href={'#dreamform'}>Want to submit a construction idea?</Link>
                 <div className="flex flex-row justify-start flex-wrap items-center text-black gap-10 mt-12">
                     <div className="flex flex-row gap-3">
                         <Image src={phone} alt="phone" height={23} />
