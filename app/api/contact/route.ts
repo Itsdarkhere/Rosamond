@@ -12,6 +12,7 @@ export async function POST(req: Request) {
     const msg = {
         to: 'todd@rosamondconstruction.com',
         from: 'support@vjxsoft.com', 
+        replyTo: email,
         subject: `Customer: ${name} Email: ${email} Phone: ${phone}`,
         text: message,
     }
